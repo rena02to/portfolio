@@ -1,0 +1,34 @@
+{
+    "translation": {
+        "cookies":{
+            "message": {
+                "p1": "Este site usa cookies para garantir que você obtenha a ",
+                "span": "melhor experiência",
+                "p2": ". Ao continuar, você concorda com o uso de cookies."
+            },
+            "acept": "Aceitar cookies",
+            "denied": "Negar cookies"
+        },
+        "navbar": {
+            "dev": "Font end developer",
+            "home": "Home",
+            "menu": {
+                "title": "Menu",
+                "summary": "Summary",
+                "skills": "Skills",
+                "projects": "Projects",
+                "experiences": "Experiences",
+                "certificates": "Certificates",
+                "contacts": "Contact me"
+            },
+            "cv": "Curriculum",
+            "settings": "Settings"
+        },
+        "start": {
+            "open": "Open to work",
+            "dev": "Front end developer",
+            "phrase": "Converting ideas into memorable digital experiences...",
+            "cv": "Curriculum"
+        }
+    }
+}

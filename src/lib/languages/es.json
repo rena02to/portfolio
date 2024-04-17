@@ -1,0 +1,34 @@
+{
+    "translation": {
+        "cookies":{
+            "message": {
+                "p1": "Este site usa cookies para garantir que você obtenha a ",
+                "span": "melhor experiência",
+                "p2": ". Ao continuar, você concorda com o uso de cookies."
+            },
+            "acept": "Aceitar cookies",
+            "denied": "Negar cookies"
+        },
+        "navbar": {
+            "dev": "Desarrollador front end",
+            "home": "Comienzo",
+            "menu": {
+                "title": "Menú",
+                "summary": "Resumen",
+                "skills": "Habilidades",
+                "projects": "Proyectos",
+                "experiences": "Experiencias",
+                "certificates": "Certificados",
+                "contacts": "Contáctame"
+            }, 
+            "cv": "Curriculum",
+            "settings": "Ajustes"
+        },
+        "start": {
+            "open": "Disponible para trabajos",
+            "dev": "Desarrollador front-end",
+            "phrase": "Convirtiendo ideas en experiencias digitales memorables...",
+            "cv": "Currículum"
+        }
+    }
+}
