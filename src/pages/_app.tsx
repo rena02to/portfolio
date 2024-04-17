@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { ContextProvider } from "@/context/context";
-import './../lib/i18n';
+import '@/lib/i18n';
 
 export default function App({ Component, pageProps }: AppProps) {
   return(

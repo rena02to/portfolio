@@ -14,7 +14,7 @@
     "@vercel/analytics": "^1.2.2",
     "@vercel/speed-insights": "^1.0.10",
     "i18next": "^23.11.2",
-    "js-cookies": "^1.0.4",
+    "js-cookie": "^3.0.5",
     "next": "14.2.1",
     "react": "^18",
     "react-dom": "^18",

@@ -1,4 +1,4 @@
-import style from './../styles/settings.module.scss';
+import style from '@/styles/settings.module.scss';
 
 export default function Settings(){
     return(

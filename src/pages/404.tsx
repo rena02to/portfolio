@@ -1,5 +1,5 @@
 import Image from "next/image";
-import style from './../styles/404.module.scss';
+import style from '@/styles/404.module.scss';
 import Link from "next/link";
 import { GoArrowUpLeft } from "react-icons/go";
 
