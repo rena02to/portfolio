@@ -52,7 +52,7 @@ export default function Navbar(){
                 </button>
                 <span className={style.line}/>
                 <div className={style.navigation}>
-                    <p className={style.navtitle}>{t('navbar.menu.title')}</p>
+                    {menuOpen ? <p className={style.navtitle}>{t('navbar.menu.title')}</p> : null}
                     {links.map((link) => (
                         <button className={style.link} key={link.key}>
                             {link.icon}
