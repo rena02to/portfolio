@@ -83,7 +83,7 @@ export default function Navbar(){
                 }
                 <span className={style.line}/>
                 <div className={style.settingscontainer}>
-                    <p className={style.settingstitle}>{t('navbar.settings')}</p>
+                    {menuOpen ? <p className={style.settingstitle}>{t('navbar.settings')}</p> : null}
                     <Link href='/settings' className={style.settings}>
                         <IoSettingsSharp/>
                         {menuOpen ? <p>{t('navbar.settings')}</p> : null}
