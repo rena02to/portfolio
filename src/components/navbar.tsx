@@ -81,11 +81,15 @@ export default function Navbar(){
                     </>
                     : null
                 }
+                <span className={style.line}/>
+                <div className={style.settingscontainer}>
+                    <p className={style.settingstitle}>{t('navbar.settings')}</p>
+                    <Link href='/settings' className={style.settings}>
+                        <IoSettingsSharp/>
+                        {menuOpen ? <p>{t('navbar.settings')}</p> : null}
+                    </Link>
+                </div>
             </div>
-            <Link href='/settings' className={style.settings}>
-                <IoSettingsSharp/>
-                {menuOpen ? <p>{t('navbar.settings')}</p> : null}
-            </Link>
         </nav>
     )
 }

@@ -37,7 +37,6 @@
         align-items: flex-start;
         justify-content: flex-start;
         gap: 20px;
-        height: 88vh;
         .profile{
             @include align-flex(row);
             gap: 10px;
@@ -111,19 +110,28 @@
                 }
             }
         }
-    }
-    .settings{
-        text-decoration: none;
-        @include align-flex(auto);
-        width: max-content;
-        gap: 5px;
-        padding: 5px;
-        border-radius: 10px;
-        svg, p{
-            color: black;
-        }
-        &:hover{
-            background-color: rgba(0, 0, 0, 0.1);
+        .settingscontainer{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .settingstitle{
+                font-size: 17px;
+                font-weight: 600;
+            }
+            .settings{
+                text-decoration: none;
+                @include align-flex(auto);
+                width: max-content;
+                gap: 5px;
+                padding: 5px;
+                border-radius: 10px;
+                svg, p{
+                    color: black;
+                }
+                &:hover{
+                    background-color: rgba(0, 0, 0, 0.1);
+                }
+            }
         }
     }
 }
