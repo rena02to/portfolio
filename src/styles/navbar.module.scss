@@ -1,0 +1,129 @@
+@import './main.scss';
+
+.nav{
+    background-color: $navbar-color;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: fixed;
+    border-radius: 0 10px 10px 0;
+    height: calc(100vh - 30px);
+    overflow: auto;
+    p{
+        margin: 0;
+    }
+    svg{
+        height: 25px;
+        width: 25px;
+    }
+    .menu{
+        position: absolute;
+    }
+    button{
+        padding: 0;
+        background-color: transparent;
+        @include align-flex(auto);
+        cursor: pointer;
+        padding: 5px;
+        border-radius: 10px;
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+    .interns{
+        margin-top: 50px;
+        @include align-flex(column);
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: 20px;
+        height: 88vh;
+        .profile{
+            @include align-flex(row);
+            gap: 10px;
+            img{
+                border-radius: 100px;
+            }
+            .namedev{
+                .name, .dev{
+                    font-size: 17px;
+                }
+                .name{
+                    font-weight: 600;
+                }
+                .dev{
+                    font-weight: 500;
+                }
+            }
+        }
+        .home{
+            @include align-flex(row);
+            gap: 5px;
+            font-size: 15px;
+        }
+        .line{
+            display: block;
+            width: 95%;
+            height: 2px;
+            background-color: black;
+        }
+        .navigation{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            font-size: 15px;
+            .navtitle{
+                font-size: 17px;
+                font-weight: 600;
+            }
+            .link{
+                @include align-flex(row);
+                gap: 5px;
+            }
+        }
+        .linkscontainer{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .linkstitle{
+                font-size: 17px;
+                font-weight: 600;
+            }
+            .links{
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                a{
+                    display: flex;
+                    flex-direction: row;
+                    gap: 3px;
+                    text-decoration: none;
+                    color: rgb(0, 0, 150);
+                    @include align-flex(auto);
+                    width: max-content;
+                    gap: 5px;
+                    padding: 5px;
+                    border-radius: 10px;
+                    &:hover{
+                        background-color: rgba(0, 0, 0, 0.1);
+                    }
+                }
+            }
+        }
+    }
+    .settings{
+        text-decoration: none;
+        @include align-flex(auto);
+        width: max-content;
+        gap: 5px;
+        padding: 5px;
+        border-radius: 10px;
+        svg, p{
+            color: black;
+        }
+        &:hover{
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+}
