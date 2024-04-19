@@ -60,6 +60,33 @@ export default function Navbar(){
                         </button>
                     ))}
                 </div>
+                <div className={style.navigation}>
+                    {menuOpen ? <p className={style.navtitle}>{t('navbar.menu.title')}</p> : null}
+                    {links.map((link) => (
+                        <button className={style.link} key={link.key}>
+                            {link.icon}
+                            {menuOpen ? <p>{link.value}</p> : null}
+                        </button>
+                    ))}
+                </div>
+                <div className={style.navigation}>
+                    {menuOpen ? <p className={style.navtitle}>{t('navbar.menu.title')}</p> : null}
+                    {links.map((link) => (
+                        <button className={style.link} key={link.key}>
+                            {link.icon}
+                            {menuOpen ? <p>{link.value}</p> : null}
+                        </button>
+                    ))}
+                </div>
+                <div className={style.navigation}>
+                    {menuOpen ? <p className={style.navtitle}>{t('navbar.menu.title')}</p> : null}
+                    {links.map((link) => (
+                        <button className={style.link} key={link.key}>
+                            {link.icon}
+                            {menuOpen ? <p>{link.value}</p> : null}
+                        </button>
+                    ))}
+                </div>
                 {menuOpen ?
                     <>
                         <span className={style.line}/>
@@ -81,15 +108,14 @@ export default function Navbar(){
                     </>
                     : null
                 }
-                <span className={style.line}/>
-                <div className={style.settingscontainer}>
+            </div>
+            <div className={style.settingscontainer}>
                     {menuOpen ? <p className={style.settingstitle}>{t('navbar.settings')}</p> : null}
                     <Link href='/settings' className={style.settings}>
                         <IoSettingsSharp/>
                         {menuOpen ? <p>{t('navbar.settings')}</p> : null}
                     </Link>
                 </div>
-            </div>
         </nav>
     )
 }

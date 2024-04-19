@@ -9,7 +9,6 @@
     position: fixed;
     border-radius: 0 10px 10px 0;
     height: calc(100vh - 30px);
-    overflow: auto;
     p{
         margin: 0;
     }
@@ -18,7 +17,8 @@
         width: 25px;
     }
     .menu{
-        position: absolute;
+        position: fixed;
+
     }
     button{
         padding: 0;
@@ -37,6 +37,9 @@
         align-items: flex-start;
         justify-content: flex-start;
         gap: 20px;
+        height: 85vh;
+        overflow: auto;
+        margin-bottom: 50px;
         .profile{
             @include align-flex(row);
             gap: 10px;
@@ -110,27 +113,29 @@
                 }
             }
         }
-        .settingscontainer{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            .settingstitle{
-                font-size: 17px;
-                font-weight: 600;
+    }
+    .settingscontainer{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        position: fixed;
+        bottom: 20px;
+        .settingstitle{
+            font-size: 17px;
+            font-weight: 600;
+        }
+        .settings{
+            text-decoration: none;
+            @include align-flex(auto);
+            width: max-content;
+            gap: 5px;
+            padding: 5px;
+            border-radius: 10px;
+            svg, p{
+                color: black;
             }
-            .settings{
-                text-decoration: none;
-                @include align-flex(auto);
-                width: max-content;
-                gap: 5px;
-                padding: 5px;
-                border-radius: 10px;
-                svg, p{
-                    color: black;
-                }
-                &:hover{
-                    background-color: rgba(0, 0, 0, 0.1);
-                }
+            &:hover{
+                background-color: rgba(0, 0, 0, 0.1);
             }
         }
     }
