@@ -7,7 +7,7 @@ import { AiOutlineFileProtect } from 'react-icons/ai';
 import { BiSolidMedal } from 'react-icons/bi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { IoIosMenu } from 'react-icons/io';
-import { IoCloseOutline, IoSettingsSharp } from 'react-icons/io5';
+import { IoArrowDown, IoCloseOutline, IoSettingsSharp } from 'react-icons/io5';
 import { PiArrowUpRight } from 'react-icons/pi';
 import { RiContactsBook2Fill, RiUserStarFill } from 'react-icons/ri';
 import { SiApostrophe } from 'react-icons/si';
@@ -16,7 +16,8 @@ import { TiHome, TiInfo } from 'react-icons/ti';
 export default function Navbar(){
     const { t } = useTranslation();
     const [ menuOpen, setMenuOpen ] = useState(false);
-    const [ activated, setActiveted ] = useState('start');
+    const [ topHabilited, setTopHabilited ] = useState(false);
+    const [ activated, setActiveted ] = useState('');
     const links = [
         {key: 1, value: t('navbar.menu.summary'), icon: <TiInfo/>, link: 'summary'},
         {key: 2, value: t('navbar.menu.skills'), icon: <SiApostrophe/>, link: 'skills'},
@@ -37,11 +38,11 @@ export default function Navbar(){
                 }
             });
 
-            /*if (window.scrollY >= 300) {
-              setqScroll(true);
+            if (window.scrollY >= 300) {
+              setTopHabilited(true);
             } else {
-                setqScroll(false);
-            }*/
+                setTopHabilited(false);
+            }
         }
 
         
@@ -50,6 +51,14 @@ export default function Navbar(){
             window.removeEventListener('scroll', handleScroll);
         };
     }, [ setActiveted ]);
+
+    const handleClickButton = (id : string) => {
+        if(id === 'start'){
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }else{
+            document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+        }
+    }
 
     return(
         <nav className={style.nav}>
@@ -72,7 +81,7 @@ export default function Navbar(){
                     : null
                 }
                 <span className={style.line}/>
-                <button type='button' className={activated === 'start' ? style.homeactivated : style.home}>
+                <button type='button' className={activated === 'start' ? style.homeactivated : style.home} onClick={() => handleClickButton('start')}>
                     <TiHome/>
                     {menuOpen ? <p>{t('navbar.home')}</p>: null}
                 </button>
@@ -80,7 +89,7 @@ export default function Navbar(){
                 <div className={style.navigation}>
                     {menuOpen ? <p className={style.title}>{t('navbar.menu.title')}</p> : null}
                     {links.map((link) => (
-                        <button className={activated === link.link ? style.linkactivated : style.link} key={link.key}>
+                        <button className={activated === link.link ? style.linkactivated : style.link} key={link.key} onClick={() => handleClickButton(link.link)}>
                             {link.icon}
                             {menuOpen ? <p>{link.value}</p> : null}
                         </button>
@@ -116,6 +125,12 @@ export default function Navbar(){
                     </Link>
                 </div>
             </div>
+            {topHabilited ? 
+                <button type='button' className={style.top} onClick={() => handleClickButton('start')}>
+                    <IoArrowDown/>
+                </button>
+                : null
+            }
         </nav>
     )
 }

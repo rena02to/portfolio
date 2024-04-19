@@ -10,9 +10,11 @@
     padding: 15px;
     height: calc(100vh - 30px);
     border-radius: 0 20px 20px 0;
-    background-color: $navbar-color;
+    background-color: rgba($navbar-color, 0.75);
     position: fixed;
     overflow: auto;
+    top: 0;
+    left: 0;
     button{
         padding: 0;
         background-color: transparent;
@@ -154,6 +156,19 @@
                     background-color: $navbar-button-hover;
                 }
             }
+        }
+    }
+    .top{
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        transform: rotateZ(180deg);
+        @include align-flex(row);
+        padding: 5px;
+        border-radius: 15px;
+        background-color: $cookies-acept;
+        &:hover{
+            background-color: $navbar-button-hover;
         }
     }
 }
