@@ -38,7 +38,6 @@
         justify-content: flex-start;
         gap: 20px;
         margin-bottom: 50px;
-        background-color: red;
         .profile{
             @include align-flex(row);
             gap: 10px;
