@@ -1,7 +1,7 @@
 import style from '@/styles/navbar.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { AiOutlineFileProtect } from 'react-icons/ai';
 import { BiSolidMedal } from 'react-icons/bi';
@@ -18,6 +18,7 @@ export default function Navbar(){
     const [ menuOpen, setMenuOpen ] = useState(false);
     const [ topHabilited, setTopHabilited ] = useState(false);
     const [ activated, setActiveted ] = useState('');
+    const menuRef = useRef<HTMLDivElement>(null);
     const links = [
         {key: 1, value: t('navbar.menu.summary'), icon: <TiInfo/>, link: 'summary'},
         {key: 2, value: t('navbar.menu.skills'), icon: <SiApostrophe/>, link: 'skills'},
@@ -44,7 +45,6 @@ export default function Navbar(){
                 setTopHabilited(false);
             }
         }
-
         
         window.addEventListener('scroll', handleScroll);
         return () => {
@@ -61,13 +61,9 @@ export default function Navbar(){
     }
 
     return(
-        <nav className={style.nav}>
+        <nav className={style.nav} ref={menuRef}>
             <button type='button' className={style.menu} onClick={() => setMenuOpen(!menuOpen)}>
-                {menuOpen ?
-                    <IoCloseOutline/>
-                    :
-                    <IoIosMenu/>
-                }
+                {menuOpen ? <IoCloseOutline/> : <IoIosMenu/>}
             </button>
             <div className={style.interns}>
                 {menuOpen ?
