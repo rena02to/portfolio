@@ -60,33 +60,6 @@ export default function Navbar(){
                         </button>
                     ))}
                 </div>
-                <div className={style.navigation}>
-                    {menuOpen ? <p className={style.navtitle}>{t('navbar.menu.title')}</p> : null}
-                    {links.map((link) => (
-                        <button className={style.link} key={link.key}>
-                            {link.icon}
-                            {menuOpen ? <p>{link.value}</p> : null}
-                        </button>
-                    ))}
-                </div>
-                <div className={style.navigation}>
-                    {menuOpen ? <p className={style.navtitle}>{t('navbar.menu.title')}</p> : null}
-                    {links.map((link) => (
-                        <button className={style.link} key={link.key}>
-                            {link.icon}
-                            {menuOpen ? <p>{link.value}</p> : null}
-                        </button>
-                    ))}
-                </div>
-                <div className={style.navigation}>
-                    {menuOpen ? <p className={style.navtitle}>{t('navbar.menu.title')}</p> : null}
-                    {links.map((link) => (
-                        <button className={style.link} key={link.key}>
-                            {link.icon}
-                            {menuOpen ? <p>{link.value}</p> : null}
-                        </button>
-                    ))}
-                </div>
                 {menuOpen ?
                     <>
                         <span className={style.line}/>

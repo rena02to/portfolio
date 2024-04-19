@@ -37,9 +37,8 @@
         align-items: flex-start;
         justify-content: flex-start;
         gap: 20px;
-        height: 85vh;
-        overflow: auto;
         margin-bottom: 50px;
+        background-color: red;
         .profile{
             @include align-flex(row);
             gap: 10px;
