@@ -30,7 +30,7 @@
         height: 25px;
     }
     .title{
-        font-weight: 800;
+        font-weight: 700;
         letter-spacing: 3px;
     }
     .menu{
@@ -41,8 +41,8 @@
     }
     .interns{
         @include align-flex(column);
-        gap: 10px;
         align-items: flex-start;
+        gap: 5px;
         .line{
             height: 1px;
             background-color: black;
@@ -69,47 +69,90 @@
                 font-weight: 500;
             }
         }
-        .home{
+        .home, .homeactivated{
             @include align-flex(row);
-            gap: 10px;
+            gap: 5px;
+            padding: 5px;
+            border-radius: 10px;
+            width: 100%;
+            justify-content: flex-start;
+        }
+        .home{
+            background-color: transparent;
+            &:hover{
+                background-color: $navbar-button-hover;
+            }
+        }
+        .homeactivated{
+            background-color: $navbar-button-actived;
         }
         .navigation{
             @include align-flex(column);
             align-items: flex-start;
             gap: 10px;
-            .link{
+            width: 100%;
+            .link, .linkactivated{
                 @include align-flex(row);
-                gap: 10px;
+                gap: 5px;
+                padding: 5px;
+                border-radius: 10px;
+                width: 100%;
+                justify-content: flex-start;
+            }
+            .link{
+                &:hover{
+                    background-color: $navbar-button-hover;
+                }
+            }
+            .linkactivated{
+                background-color: $navbar-button-actived;
             }
         }
         .linkscontainer{
             @include align-flex(column);
             gap: 10px;
             align-items: flex-start;
+            width: 100%;
             .links{
                 @include align-flex(column);
                 align-items: flex-start;
-                gap: 10px;
+                gap: 5px;
+                width: 100%;
                 a{
                     @include align-flex(row);
-                    gap: 10px;
+                    width: calc(100% - 10px);
+                    gap: 5px;
                     color: rgb(0, 0, 150);
+                    padding: 5px;
+                    border-radius: 10px;
+                    justify-content: flex-start;
                     .arrow{
                         height: 15px;
                         width: 15px;
                         margin-left: -5px;
+                    }
+                    &:hover{
+                        background-color: $navbar-button-hover;
                     }
                 }
             }
         }
         .settingscontainer{
             @include align-flex(column);
-            gap: 10px;
+            gap: 5px;
             align-items: flex-start;
+            width: 100%;
             .settings{
                 @include align-flex(row);
                 gap: 10px;
                 color: black;
+                padding: 5px;
+                border-radius: 10px;
+                width: calc(100% - 10px);
+                justify-content: flex-start;
+                &:hover{
+                    background-color: $navbar-button-hover;
+                }
             }
         }
     }

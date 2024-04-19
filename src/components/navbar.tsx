@@ -16,6 +16,7 @@ import { TiHome, TiInfo } from 'react-icons/ti';
 export default function Navbar(){
     const { t } = useTranslation();
     const [ menuOpen, setMenuOpen ] = useState(false);
+    const [ activated, setActiveted ] = useState('start');
     const links = [
         {key: 1, value: t('navbar.menu.summary'), icon: <TiInfo/>, link: 'summary'},
         {key: 2, value: t('navbar.menu.skills'), icon: <SiApostrophe/>, link: 'skills'},
@@ -24,6 +25,31 @@ export default function Navbar(){
         {key: 5, value: t('navbar.menu.certificates'), icon: <BiSolidMedal/>, link: 'certificates'},
         {key: 6, value: t('navbar.menu.contacts'), icon: <RiContactsBook2Fill/>, link: 'contact'},
     ];
+
+    useEffect(() => {
+        function handleScroll() {
+            const sections = document.querySelectorAll('section');
+
+            sections.forEach(section => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= 100 && rect.bottom >= 100) {
+                    setActiveted(section.id);
+                }
+            });
+
+            /*if (window.scrollY >= 300) {
+              setqScroll(true);
+            } else {
+                setqScroll(false);
+            }*/
+        }
+
+        
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [ setActiveted ]);
 
     return(
         <nav className={style.nav}>
@@ -46,7 +72,7 @@ export default function Navbar(){
                     : null
                 }
                 <span className={style.line}/>
-                <button type='button' className={style.home}>
+                <button type='button' className={activated === 'start' ? style.homeactivated : style.home}>
                     <TiHome/>
                     {menuOpen ? <p>{t('navbar.home')}</p>: null}
                 </button>
@@ -54,7 +80,7 @@ export default function Navbar(){
                 <div className={style.navigation}>
                     {menuOpen ? <p className={style.title}>{t('navbar.menu.title')}</p> : null}
                     {links.map((link) => (
-                        <button className={style.link} key={link.key}>
+                        <button className={activated === link.link ? style.linkactivated : style.link} key={link.key}>
                             {link.icon}
                             {menuOpen ? <p>{link.value}</p> : null}
                         </button>
