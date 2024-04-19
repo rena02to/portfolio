@@ -1,0 +1,115 @@
+@import './main.scss';
+
+.nav{
+    @include align-flex(column);
+    background-color: red;
+    width: max-content;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 15px;
+    height: calc(100vh - 30px);
+    border-radius: 0 20px 20px 0;
+    background-color: $navbar-color;
+    position: fixed;
+    button{
+        padding: 0;
+        background-color: transparent;
+    }
+    a{
+        text-decoration: none;
+        font-size: 15px;
+    }
+    p{
+        margin: 0;
+        font-size: 15px;
+    }
+    svg{
+        width: 25px;
+        height: 25px;
+    }
+    .title{
+        font-weight: 800;
+        letter-spacing: 3px;
+    }
+    .menu{
+        svg{
+            height: 30px;
+            width: 30px;
+        }
+    }
+    .interns{
+        @include align-flex(column);
+        gap: 10px;
+        align-items: flex-start;
+        .line{
+            height: 1px;
+            background-color: black;
+            display: block;
+            width: 100%;
+        }
+        .profile{
+            @include align-flex(row);
+            gap: 5px;
+            img{
+                border-radius: 100px;
+            }
+            .namedev{
+                @include align-flex(column);
+                justify-content: space-between;
+                align-items: flex-start;
+                gap: 10px;
+            }
+            .name{
+                font-weight: 600;
+                font-size: 17px;
+            }
+            .dev{
+                font-weight: 500;
+            }
+        }
+        .home{
+            @include align-flex(row);
+            gap: 10px;
+        }
+        .navigation{
+            @include align-flex(column);
+            align-items: flex-start;
+            gap: 10px;
+            .link{
+                @include align-flex(row);
+                gap: 10px;
+            }
+        }
+        .linkscontainer{
+            @include align-flex(column);
+            gap: 10px;
+            align-items: flex-start;
+            .links{
+                @include align-flex(column);
+                align-items: flex-start;
+                gap: 10px;
+                a{
+                    @include align-flex(row);
+                    gap: 10px;
+                    color: rgb(0, 0, 150);
+                    .arrow{
+                        height: 15px;
+                        width: 15px;
+                        margin-left: -5px;
+                    }
+                }
+            }
+        }
+        .settingscontainer{
+            @include align-flex(column);
+            gap: 10px;
+            align-items: flex-start;
+            .settings{
+                @include align-flex(row);
+                gap: 10px;
+                color: black;
+            }
+        }
+    }
+}

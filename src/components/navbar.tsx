@@ -37,7 +37,7 @@ export default function Navbar(){
             <div className={style.interns}>
                 {menuOpen ?
                     <div className={style.profile}>
-                        <Image src='/images/foto.jpg' alt='Renato Alves Photo' width={75} height={75}/>
+                        <Image src='/images/foto.jpg' width={75} height={75} alt='Renato Alves photo'/>
                         <div className={style.namedev}>
                             <p className={style.name}>Renato Alves</p>
                             <p className={style.dev}>{t('navbar.dev')}</p>
@@ -52,7 +52,7 @@ export default function Navbar(){
                 </button>
                 <span className={style.line}/>
                 <div className={style.navigation}>
-                    {menuOpen ? <p className={style.navtitle}>{t('navbar.menu.title')}</p> : null}
+                    {menuOpen ? <p className={style.title}>{t('navbar.menu.title')}</p> : null}
                     {links.map((link) => (
                         <button className={style.link} key={link.key}>
                             {link.icon}
@@ -64,7 +64,7 @@ export default function Navbar(){
                     <>
                         <span className={style.line}/>
                         <div className={style.linkscontainer}>
-                            <p className={style.linkstitle}>Links</p>
+                            {menuOpen ? <p className={style.title}>Links</p> : null}
                             <div className={style.links}>
                                 <a href='https://linkedin.com/in/renatosalves/'>
                                     <FaLinkedin/>
@@ -81,14 +81,15 @@ export default function Navbar(){
                     </>
                     : null
                 }
-            </div>
-            <div className={style.settingscontainer}>
-                    {menuOpen ? <p className={style.settingstitle}>{t('navbar.settings')}</p> : null}
+                <span className={style.line}/>
+                <div className={style.settingscontainer}>
+                    {menuOpen ? <p className={style.title}>{t('navbar.settings')}</p> : null}
                     <Link href='/settings' className={style.settings}>
                         <IoSettingsSharp/>
                         {menuOpen ? <p>{t('navbar.settings')}</p> : null}
                     </Link>
                 </div>
+            </div>
         </nav>
     )
 }
