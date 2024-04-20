@@ -1,0 +1,14 @@
+.mainOpenMenu{
+    transform: scale(0.75) rotateX(-20deg) rotateY(-10deg);
+    box-shadow: 20px 20px 20px black;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
+    border: 1px solid black;
+    height: 100vh;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+.main{
+    transition: transform 0.3s ease-in-out;
+}

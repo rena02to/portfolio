@@ -1,4 +1,31 @@
 @import './main.scss';
 
-.start{
+.home{
+    padding-left: 75px;
+    height: 100vh;
+    @include align-flex(row);
+    .name{
+        position: absolute;
+        font-family: $name-font;
+        top: 10px;
+        left: 90px;
+        font-size: 50px;
+        margin: 0;
+        font-weight: 400;
+    }
+    .text{
+        text-align: center;
+        h1{
+            font-size: 125px;
+            font-weight: 500;
+            margin: 0;
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            padding: 10px;
+        }
+        p{
+            font-size: 75px;
+            margin: 0;
+        }
+    }
 }

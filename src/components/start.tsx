@@ -1,8 +1,16 @@
-import style from '@/styles/start.module.scss';
+import style from './../styles/start.module.scss';
+import { useTranslation } from 'react-i18next';
 
 export default function Start(){
+    const { t } = useTranslation();
+
     return(
-        <section className={style.start} id="start">
+        <section className={style.home} id='start'>
+            <h1 className={style.name}>Renato Alves</h1>
+            <div className={style.text}>
+                <h1>{t('start.dev')}</h1>
+                <p>PORTFOLIO</p>
+            </div>
         </section>
     );
 }
