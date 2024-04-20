@@ -1,4 +1,3 @@
-import { useContexts } from '@/context/context';
 import style from '@/styles/navbar.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -17,7 +16,7 @@ import { TiHome, TiInfo } from 'react-icons/ti';
 
 export default function Navbar(){
     const { t } = useTranslation();
-    const { menuOpen, setMenuOpen } = useContexts();
+    const [ menuOpen, setMenuOpen ] = useState(false);
     const [ topHabilited, setTopHabilited ] = useState(false);
     const [ activated, setActiveted ] = useState('');
     const links = [
