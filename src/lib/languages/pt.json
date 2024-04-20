@@ -26,7 +26,10 @@
         },
         "start": {
             "open": "Disponível para trabalhos",
-            "dev": "DESENVOLVEDOR FRONT END",
+            "dev": {
+                "1": "DESENVOLVEDOR",
+                "2": "FRONT END"
+            },
             "phrase": "Transformando ideias em experiências digitais memoráveis...",
             "cv": "Currículo"
         }

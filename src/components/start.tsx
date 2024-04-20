@@ -8,7 +8,7 @@ export default function Start(){
         <section className={style.home} id='start'>
             <h1 className={style.name}>Renato Alves</h1>
             <div className={style.text}>
-                <h1>{t('start.dev')}</h1>
+                <h1>{t('start.dev.1')}<br/>{t('start.dev.2')}</h1>
                 <p>PORTFOLIO</p>
             </div>
         </section>

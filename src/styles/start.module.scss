@@ -12,6 +12,19 @@
         font-size: 50px;
         margin: 0;
         font-weight: 400;
+        text-shadow: 5px 5px 5px rgba(black, 0.7);
+        @media (max-width: 1600px){
+            font-size: 40px;
+        }
+        @media (max-width: 1000px){
+            font-size: 40px;
+        }
+        @media (max-width: 800px){
+            font-size: 25px;
+        }
+        @media (max-width: 600px){
+            font-size: 20px;
+        }
     }
     .text{
         text-align: center;
@@ -19,13 +32,47 @@
             font-size: 125px;
             font-weight: 500;
             margin: 0;
-            border-top: 1px solid black;
-            border-bottom: 1px solid black;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
             padding: 10px;
+            @media (max-width: 1600px){
+                font-size: 90px;
+            }
+            @media (max-width: 1000px){
+                font-size: 75px;
+            }
+            @media (max-width: 800px){
+                font-size: 50px;
+            }
+            @media (max-width: 600px){
+                font-size: 35px;
+            }
+            @media (max-width: 400px){
+                font-size: 30px;
+            }
         }
         p{
             font-size: 75px;
             margin: 0;
+            font-weight: 300;
+            @media (max-width: 1600px){
+                font-size: 60px;
+            }
+            @media (max-width: 1400px){
+                font-size: 50px;
+            }
+            @media (max-width: 1000px){
+                font-size: 40px;
+            }
+            @media (max-width: 800px){
+                font-size: 30px;
+            }
+            @media (max-width: 600px){
+                font-size: 25px;
+            }
+            @media (max-width: 400px){
+                font-size: 20px;
+            }
         }
     }
 }

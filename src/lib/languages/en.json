@@ -26,7 +26,10 @@
         },
         "start": {
             "open": "Open to work",
-            "dev": "FRONT END DEVELOPER",
+            "dev": {
+                "1": "FRONT END",
+                "2": "DEVELOPER"
+            },
             "phrase": "Converting ideas into memorable digital experiences...",
             "cv": "Curriculum"
         }
