@@ -97,13 +97,13 @@
             top: 20px;
             right: -25px;
             transform: rotateZ(25deg);
-            background-color: rgb(183, 173, 207);
+            background-color: $responsive-color;
         }
         .innovation{
             top: 60%;
             left: 10%;
             transform: rotateZ(-15deg);
-            background-color: rgb(209, 156, 29);
+            background-color: $innovation-color;
         }
         .next{
             top: 25%;

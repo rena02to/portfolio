@@ -93,7 +93,7 @@
             }
         }
         .homeactivated{
-            background-color: $navbar-button-actived;
+            background-color: $responsive-color;
         }
         .navigation{
             @include align-flex(column);
@@ -114,7 +114,7 @@
                 }
             }
             .linkactivated{
-                background-color: $navbar-button-actived;
+                background-color: $innovation-color;
             }
         }
         .linkscontainer{
