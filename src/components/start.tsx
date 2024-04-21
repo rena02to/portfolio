@@ -8,6 +8,7 @@ export default function Start(){
         { key: 2, value: <p className={style.responsive}>{t('start.responsive')}</p> },
         { key: 3, value: <p className={style.innovation}>{t('start.innovation')}</p> },
         { key: 4, value: <p className={style.next}>Next.js</p> },
+        { key: 5, value: <p className={style.uix}>UI & UX</p> },
     ];
 
     return(

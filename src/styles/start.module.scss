@@ -67,7 +67,7 @@
                 font-size: 20px;
             }
         }
-        .seo, .responsive, .innovation, .next{
+        .seo, .responsive, .innovation, .next, .uix{
             width: max-content;
             padding: 5px 20px;
             font-size: 25px;
@@ -109,6 +109,17 @@
             top: 25%;
             left: 45%;
             background-color: $navbar-color;
+        }
+        .next{
+            top: 25%;
+            left: 45%;
+            background-color: $navbar-color;
+        }
+        .uix{
+            background-color: $uix-color;
+            right: 15%;
+            bottom: 25%;
+            transform: rotateZ(-38deg);
         }
         .phrase{
             font-size: 30px;
