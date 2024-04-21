@@ -1,5 +1,6 @@
 @import './main.scss';
 
 .summary{
-    
+    padding-left: 75px;
+    @include align-flex(column);
 }
