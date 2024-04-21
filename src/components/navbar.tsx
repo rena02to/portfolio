@@ -61,11 +61,11 @@ export default function Navbar(){
     }
 
     return(
-        <nav className={style.nav}>
+        <header className={style.nav}>
             <button type='button' className={style.menu} onClick={() => setMenuOpen(!menuOpen)}>
                 {menuOpen ? <IoCloseOutline/> : <IoIosMenu/>}
             </button>
-            <div className={style.interns}>
+            <nav className={style.interns}>
                 {menuOpen ?
                     <div className={style.profile}>
                         <Image src='/images/foto.jpg' width={75} height={75} alt='Renato Alves photo'/>
@@ -120,13 +120,13 @@ export default function Navbar(){
                         {menuOpen ? <p>{t('navbar.settings')}</p> : null}
                     </Link>
                 </div>
-            </div>
+            </nav>
             {topHabilited ? 
                 <button type='button' className={style.top} onClick={() => handleClickButton('start')}>
                     <IoArrowDown/>
                 </button>
                 : null
             }
-        </nav>
+        </header>
     )
 }
