@@ -25,13 +25,14 @@
             "settings": "Ajustes"
         },
         "start": {
-            "open": "Disponible para trabajos",
             "dev": {
                 "1": "DESARROLLADOR",
                 "2": "FRONT END"
             },
-            "phrase": "Convirtiendo ideas en experiencias digitales memorables...",
-            "cv": "Currículum"
+            "seo": "SEO",
+            "responsive": "Responsividad",
+            "innovation": "Innovación",
+            "phrase": "Convirtiendo ideas en experiencias digitales memorables..."
         }
     }
 }

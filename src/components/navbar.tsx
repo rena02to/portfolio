@@ -18,7 +18,7 @@ export default function Navbar(){
     const { t } = useTranslation();
     const [ menuOpen, setMenuOpen ] = useState(false);
     const [ topHabilited, setTopHabilited ] = useState(false);
-    const [ activated, setActiveted ] = useState('');
+    const [ activated, setActiveted ] = useState('start');
     const links = [
         {key: 1, value: t('navbar.menu.summary'), icon: <TiInfo/>, link: 'summary'},
         {key: 2, value: t('navbar.menu.skills'), icon: <SiApostrophe/>, link: 'skills'},
