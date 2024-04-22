@@ -9,12 +9,12 @@
         font-family: $name-font;
         top: 10px;
         left: 90px;
-        font-size: 50px;
+        font-size: 60px;
         margin: 0;
         font-weight: 400;
         text-shadow: 5px 5px 5px rgba(black, 0.7);
         @media (max-width: 1600px){
-            font-size: 40px;
+            font-size: 50px;
         }
         @media (max-width: 1000px){
             font-size: 40px;
