@@ -4,11 +4,11 @@ import { useTranslation } from 'react-i18next';
 export default function Start(){
     const { t } = useTranslation();
     const cards = [
-        { value: <p className={style.seo}>{t('start.seo')}</p> },
-        { value: <p className={style.responsive}>{t('start.responsive')}</p> },
-        { value: <p className={style.innovation}>{t('start.innovation')}</p> },
-        { value: <p className={style.next}>Next.js</p> },
-        { value: <p className={style.uix}>UI & UX</p> },
+        { key: 1, value: t('start.seo'), style: style.seo },
+        { key: 2, value: t('start.responsive'), style: style.responsive },
+        { key: 3, value: t('start.innovation'), style: style.innovation },
+        { key: 4, value: 'Next.js', style: style.next },
+        { key: 5, value: 'UI & UX', style: style.uix },
     ];
 
     return(
@@ -19,7 +19,7 @@ export default function Start(){
                 <h2 className={style.portfolio}>PORTFOLIO</h2>
                 <p className={style.phrase}>{t("start.phrase")}</p>
                 {cards.map((card) => (
-                    <>{card.value}</>
+                    <p className={card.style} key={card.key}>{card.value}</p>
                 ))}
             </div>
         </section>
