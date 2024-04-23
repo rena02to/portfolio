@@ -199,6 +199,9 @@
             }
         }
         .github{
+            svg{
+                color: black;
+            }
             &:hover{
                 background-color: rgb(75, 75, 75);
                 border: 2px solid rgb(75, 75, 75);

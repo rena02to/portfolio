@@ -21,11 +21,8 @@ export default function Navbar(){
     const [ activated, setActiveted ] = useState('start');
     const links = [
         {key: 1, value: t('navbar.menu.summary'), icon: <TiInfo/>, link: 'summary'},
-        {key: 2, value: t('navbar.menu.skills'), icon: <SiApostrophe/>, link: 'skills'},
-        {key: 3, value: t('navbar.menu.projects'), icon: <AiOutlineFileProtect/>, link: 'projects'},
-        {key: 4, value: t('navbar.menu.experiences'), icon: <RiUserStarFill/>, link: 'experiences'},
-        {key: 5, value: t('navbar.menu.certificates'), icon: <BiSolidMedal/>, link: 'certificates'},
-        {key: 6, value: t('navbar.menu.contacts'), icon: <RiContactsBook2Fill/>, link: 'contact'},
+        {key: 2, value: t('navbar.menu.projects'), icon: <AiOutlineFileProtect/>, link: 'projects'},
+        {key: 3, value: t('navbar.menu.contacts'), icon: <RiContactsBook2Fill/>, link: 'contact'},
     ];
 
     useEffect(() => {

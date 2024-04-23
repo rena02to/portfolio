@@ -15,10 +15,7 @@
             "menu": {
                 "title": "Menu",
                 "summary": "Summary",
-                "skills": "Skills",
                 "projects": "Projects",
-                "experiences": "Experiences",
-                "certificates": "Certificates",
                 "contacts": "Contact me"
             },
             "cv": "Curriculum",
@@ -33,6 +30,14 @@
             "responsive": "Responsiveness",
             "innovation": "Innovation",
             "phrase": "Converting ideas into memorable digital experiences..."
+        },
+        "summary": {
+            "titles": {
+                "about": "A little about myself",
+                "skills": "Habilidades",
+                "experiences": "Experiences",
+                "certificates": "Certificates"
+            }
         }
     }
 }
