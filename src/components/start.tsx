@@ -1,5 +1,8 @@
+import { RiLinkedinLine } from 'react-icons/ri';
 import style from './../styles/start.module.scss';
 import { useTranslation } from 'react-i18next';
+import { SlSocialGithub } from 'react-icons/sl';
+import { HiOutlineDocumentText } from 'react-icons/hi';
 
 export default function Start(){
     const { t } = useTranslation();
@@ -21,6 +24,20 @@ export default function Start(){
                 {cards.map((card) => (
                     <p className={card.style} key={card.key}>{card.value}</p>
                 ))}
+            </div>
+            <div className={style.links}>
+                <a href='https://linkedin.com/in/renatosalves' target="_blank" className={style.linkedin}>
+                    <RiLinkedinLine/>
+                    <p>Linkedin</p>
+                </a>
+                <a href='https://github.com/rena02to' target="_blank" className={style.github}>
+                    <SlSocialGithub/>
+                    <p>GitHub</p>
+                </a>
+                <a href='https://www.canva.com/design/DAFtx-3KHsg/js_-0M_Nu7iDI5Rw_qaQkA/edit?utm_content=DAFtx-3KHsg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' target="_blank" className={style.curriculum}>
+                    <HiOutlineDocumentText/>
+                    <p>CV</p>
+                </a>
             </div>
         </section>
     );

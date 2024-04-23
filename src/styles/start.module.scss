@@ -3,7 +3,7 @@
 .home{
     padding-left: 75px;
     height: 100vh;
-    @include align-flex(row);
+    @include align-flex(column);
     .name{
         position: absolute;
         font-family: $name-font;
@@ -134,6 +134,93 @@
             }
             @media (max-width: 500px){
                 font-size: 10px;
+            }
+        }
+    }
+    .links{
+        margin-top: 20px;
+        @include align-flex(row);
+        gap: 20px;
+        @media (max-width: 600px){
+            gap: 5px;
+        }
+        a{
+            @include align-flex(row);
+            gap: 0px;
+            text-decoration: none;
+            border: 2px solid gray;
+            padding: 7px 15px;
+            border-radius: 15px;
+            @media (max-width: 800px){
+                padding: 5px 10px;
+            }
+            p{
+                font-size: 20px;
+                color: black;
+                font-weight: 400;
+                margin: 0;
+                @media (max-width: 600px){
+                    font-size: 15px;
+                }
+                @media (max-width: 400px){
+                    font-size: 10px;
+                }
+                &::before{
+                    content: '';
+                    border: 1px solid gray;
+                    margin: 0px 5px;
+                }
+            }
+            svg{
+                width: 25px;
+                height: 25px;
+                @media (max-width: 600px){
+                    width: 20px;
+                    height: 20px;
+                }
+                @media (max-width: 400px){
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+        .linkedin{
+            &:hover{
+                background-color: $cookies-acept;
+                border: 2px solid $cookies-acept;
+                box-shadow: 5px 5px 5px rgba(black, 0.5);
+                p, svg{
+                    color: white;
+                    text-shadow: 5px 5px 5px black;
+                }
+            }
+            svg{
+                color: $cookies-acept;
+            }
+        }
+        .github{
+            &:hover{
+                background-color: rgb(75, 75, 75);
+                border: 2px solid rgb(75, 75, 75);
+                box-shadow: 5px 5px 5px rgba(black, 0.5);
+                p, svg{
+                    color: white;
+                    text-shadow: 5px 5px 5px black;
+                }
+            }
+        }
+        .curriculum{
+            &:hover{
+                background-color: $uix-color;
+                border: 2px solid $uix-color;
+                box-shadow: 5px 5px 5px rgba(black, 0.5);
+                p, svg{
+                    color: white;
+                    text-shadow: 5px 5px 5px rgba(black, 0.7);
+                }
+            }
+            svg{
+                color: black;
             }
         }
     }
