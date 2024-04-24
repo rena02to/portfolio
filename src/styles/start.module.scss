@@ -171,7 +171,7 @@
                     margin: 0px 5px;
                 }
             }
-            svg{
+            .icon{
                 width: 25px;
                 height: 25px;
                 @media (max-width: 600px){
@@ -183,30 +183,36 @@
                     height: 15px;
                 }
             }
+            .external{
+                color: rgb(0, 0, 150);
+                width: 20px;
+                height: 20px;
+                margin-left: 5px;
+            }
         }
         .linkedin{
             &:hover{
                 background-color: $cookies-acept;
                 border: 2px solid $cookies-acept;
                 box-shadow: 5px 5px 5px rgba(black, 0.5);
-                p, svg{
+                p, .icon{
                     color: white;
                     text-shadow: 5px 5px 5px black;
                 }
             }
-            svg{
+            .icon{
                 color: $cookies-acept;
             }
         }
         .github{
-            svg{
+            .icon{
                 color: black;
             }
             &:hover{
                 background-color: rgb(75, 75, 75);
                 border: 2px solid rgb(75, 75, 75);
                 box-shadow: 5px 5px 5px rgba(black, 0.5);
-                p, svg{
+                p, .icon{
                     color: white;
                     text-shadow: 5px 5px 5px black;
                 }
@@ -217,12 +223,12 @@
                 background-color: $uix-color;
                 border: 2px solid $uix-color;
                 box-shadow: 5px 5px 5px rgba(black, 0.5);
-                p, svg{
+                p, .icon{
                     color: white;
                     text-shadow: 5px 5px 5px rgba(black, 0.7);
                 }
             }
-            svg{
+            .icon{
                 color: black;
             }
         }
