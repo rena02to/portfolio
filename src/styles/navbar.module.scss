@@ -9,7 +9,7 @@
     gap: 15px;
     padding: 15px 10px;
     height: calc(100vh - 30px);
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 25px 25px 0;
     background-color: $navbar-color;
     position: fixed;
     overflow: auto;
@@ -51,8 +51,7 @@
     }
     .interns{
         @include align-flex(column);
-        align-items: flex-start;
-        gap: 5px;
+        gap: 10px;
         .line{
             height: 1px;
             background-color: black;
@@ -82,8 +81,8 @@
         .home, .homeactivated{
             @include align-flex(row);
             gap: 5px;
-            padding: 5px 10px;
-            border-radius: 15px;
+            padding: 5px;
+            border-radius: 10px;
             width: 100%;
             justify-content: flex-start;
         }
@@ -105,8 +104,8 @@
             .link, .linkactivated{
                 @include align-flex(row);
                 gap: 5px;
-                padding: 5px 10px;
-                border-radius: 15px;
+                padding: 5px;
+                border-radius: 10px;
                 width: 100%;
                 justify-content: flex-start;
             }
@@ -131,11 +130,11 @@
                 width: 100%;
                 a{
                     @include align-flex(row);
-                    width: calc(100% - 20px);
+                    width: calc(100% - 10px);
                     gap: 5px;
                     color: rgb(0, 0, 150);
-                    padding: 5px 10px;
-                    border-radius: 15px;
+                    padding: 5px;
+                    border-radius: 10px;
                     justify-content: flex-start;
                     .arrow{
                         height: 15px;
@@ -156,9 +155,9 @@
                 @include align-flex(row);
                 gap: 10px;
                 color: black;
-                padding: 5px 10px;
-                border-radius: 15px;
-                width: calc(100% - 20px);
+                padding: 5px;
+                border-radius: 10px;
+                width: calc(100% - 10px);
                 justify-content: flex-start;
                 &:hover{
                     background-color: $navbar-button-hover;
@@ -173,7 +172,7 @@
         transform: rotateZ(180deg);
         @include align-flex(row);
         padding: 5px;
-        border-radius: 15px;
+        border-radius: 10px;
         background-color: $cookies-acept;
         color: white;
         &:hover{
