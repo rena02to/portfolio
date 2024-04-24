@@ -152,17 +152,17 @@
             padding: 7px 15px;
             border-radius: 15px;
             @media (max-width: 800px){
-                padding: 5px 10px;
+                padding: 5px;
             }
             p{
                 font-size: 20px;
                 color: black;
                 font-weight: 400;
                 margin: 0;
-                @media (max-width: 600px){
+                @media (max-width: 800px){
                     font-size: 15px;
                 }
-                @media (max-width: 400px){
+                @media (max-width: 600px){
                     font-size: 10px;
                 }
                 &::before{
@@ -174,11 +174,11 @@
             .icon{
                 width: 25px;
                 height: 25px;
-                @media (max-width: 600px){
+                @media (max-width: 800px){
                     width: 20px;
                     height: 20px;
                 }
-                @media (max-width: 400px){
+                @media (max-width: 600px){
                     width: 15px;
                     height: 15px;
                 }
@@ -188,6 +188,14 @@
                 width: 20px;
                 height: 20px;
                 margin-left: 5px;
+                @media (max-width: 800px){
+                    width: 15px;
+                    height: 15px;
+                }
+                @media (max-width: 600px){
+                    width: 10px;
+                    height: 10px;
+                }
             }
         }
         .linkedin{
