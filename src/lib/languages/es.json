@@ -37,7 +37,8 @@
                 "skills": "Habilidades",
                 "experiences": "Experiencias",
                 "certificates": "Certificados"
-            }
+            },
+            "dev": "Desarrollador front end"
         }
     }
 }

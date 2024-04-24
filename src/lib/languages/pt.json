@@ -32,11 +32,17 @@
             "phrase": "Transformando ideias em experiências digitais memoráveis..."
         },
         "summary": {
-            "titles": {
-                "about": "Um pouco sobre mim",
-                "skills": "Habilidades",
-                "experiences": "Experiências",
-                "certificates": "Certificados"
+            "about": {
+                "title": "Um pouco sobre mim",
+                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum felis ac diam varius, eu vehicula nisl consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris nec lacus tincidunt, rhoncus purus a, mattis justo. Donec in arcu urna. Integer tempor risus eu velit vehicula, ut mattis nisi convallis. Nulla facilisi. Nam ullamcorper sodales fringilla. Vestibulum aliquet id odio vel hendrerit. Phasellus euismod luctus nulla, vel interdum urna dignissim at. Sed vel suscipit dui. Sed nec feugiat lacus, non tempus est. Sed et tempor purus. Duis sit amet lorem quis odio rhoncus posuere. Nullam vehicula ut mi ac dignissim. Sed rhoncus tellus in nulla consectetur, vel fermentum mauris tincidunt."
+            },
+            "dev": "Desenvolvedor front end",
+            "skills": {
+                "title": "Habilidades",
+                "hard": "Técnicas",
+                "soft": {
+                    "title": "Comportamentais"
+                }
             }
         }
     }

@@ -4,13 +4,11 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { AiOutlineFileProtect } from 'react-icons/ai';
-import { BiSolidMedal } from 'react-icons/bi';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
 import { IoIosMenu } from 'react-icons/io';
 import { IoArrowDown, IoCloseOutline, IoSettingsSharp } from 'react-icons/io5';
 import { PiArrowUpRight } from 'react-icons/pi';
-import { RiContactsBook2Fill, RiUserStarFill } from 'react-icons/ri';
-import { SiApostrophe } from 'react-icons/si';
+import { RiContactsBook2Fill } from 'react-icons/ri';
 import { TiHome, TiInfo } from 'react-icons/ti';
 
 
