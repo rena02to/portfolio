@@ -1,7 +1,6 @@
 import style from '@/styles/summary.module.scss';
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
-import { AiOutlineHtml5 } from 'react-icons/ai';
 
 export default function Summary(){
     const { t } = useTranslation();

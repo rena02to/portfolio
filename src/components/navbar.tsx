@@ -92,12 +92,12 @@ export default function Navbar(){
                         <div className={style.linkscontainer}>
                             {menuOpen ? <p className={style.title}>Links</p> : null}
                             <div className={style.links}>
-                                <a href='https://linkedin.com/in/renatosalves/'>
+                                <a href='https://linkedin.com/in/renatosalves/' target="_blank">
                                     <FaLinkedin/>
                                     <p>Linkedin</p>
                                     <PiArrowUpRight className={style.arrow}/>
                                 </a>
-                                <a href='https://github.com/rena02to/'>
+                                <a href='https://github.com/rena02to/' target="_blank">
                                     <FaGithub/>
                                     <p>Github</p>
                                     <PiArrowUpRight className={style.arrow}/>
