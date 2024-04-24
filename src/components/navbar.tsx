@@ -5,9 +5,9 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { AiOutlineFileProtect } from 'react-icons/ai';
 import { FaGithub, FaLinkedin } from 'react-icons/fa6';
+import { HiOutlineExternalLink } from 'react-icons/hi';
 import { IoIosMenu } from 'react-icons/io';
 import { IoArrowDown, IoCloseOutline, IoSettingsSharp } from 'react-icons/io5';
-import { PiArrowUpRight } from 'react-icons/pi';
 import { RiContactsBook2Fill } from 'react-icons/ri';
 import { TiHome, TiInfo } from 'react-icons/ti';
 
@@ -95,12 +95,12 @@ export default function Navbar(){
                                 <a href='https://linkedin.com/in/renatosalves/' target="_blank">
                                     <FaLinkedin/>
                                     <p>Linkedin</p>
-                                    <PiArrowUpRight className={style.arrow}/>
+                                    <HiOutlineExternalLink className={style.arrow}/>
                                 </a>
                                 <a href='https://github.com/rena02to/' target="_blank">
                                     <FaGithub/>
                                     <p>Github</p>
-                                    <PiArrowUpRight className={style.arrow}/>
+                                    <HiOutlineExternalLink className={style.arrow}/>
                                 </a>
                             </div>
                         </div>
