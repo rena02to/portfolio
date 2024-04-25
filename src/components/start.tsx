@@ -7,23 +7,25 @@ import { HiOutlineDocumentText, HiOutlineExternalLink } from 'react-icons/hi';
 export default function Start(){
     const { t } = useTranslation();
     const cards = [
-        { key: 1, value: t('start.seo'), style: style.seo },
-        { key: 2, value: t('start.responsive'), style: style.responsive },
-        { key: 3, value: t('start.innovation'), style: style.innovation },
-        { key: 4, value: 'Next.js', style: style.next },
-        { key: 5, value: 'UI & UX', style: style.uix },
+        { key: 1, value: t('start.seo') },
+        { key: 2, value: t('start.responsive') },
+        { key: 3, value: t('start.innovation') },
+        { key: 4, value: 'Next.js' },
+        { key: 5, value: 'UI & UX' },
     ];
 
     return(
         <section className={style.home} id='start'>
             <h1 className={style.name}>Renato Alves</h1>
-            <div className={style.text}>
-                <h1>{t('start.dev.1')}<br/>{t('start.dev.2')}</h1>
-                <h2 className={style.portfolio}>PORTFOLIO</h2>
-                <p className={style.phrase}>{t("start.phrase")}</p>
+            <ul>
                 {cards.map((card) => (
-                    <p className={card.style} key={card.key}>{card.value}</p>
+                    <li key={card.key}>{card.value}</li>
                 ))}
+            </ul>
+            <div className={style.text}>
+                <h2 className={style.portfolio}>PORTFOLIO</h2>
+                <h1>{t('start.dev.1')}<br/>{t('start.dev.2')}</h1>
+                <p className={style.phrase}>{t("start.phrase")}</p>
             </div>
             <div className={style.links}>
                 <a href='https://linkedin.com/in/renatosalves' target="_blank" className={style.linkedin}>

@@ -1,0 +1,64 @@
+@import './main.scss';
+
+.home{
+    padding-left: 75px;
+    padding-top: 35px;
+    height: calc(100vh - 35px);
+    @include align-flex(column);
+    gap: 30px;
+    .name{
+        position: absolute;
+        top: 0;
+        left: 75px;
+        font-family: $name-font;
+        font-size: 50px;
+        margin: 0;
+        font-weight: 600;
+    }
+    h1, h2, p{
+        margin: 0;border-radius: 5px 0 0 5px;
+    }
+    .text{
+        @include align-flex(column);
+        text-align: center;
+        gap: 10px;
+        h1{
+            font-size: 150px;
+            font-weight: 400;
+            padding: 5px;
+            border-top: 2px solid gray;
+            border-bottom: 2px solid gray;
+        }
+        h2{
+            font-size: 75px;
+            font-weight: 300;
+        }
+        .phrase{
+            font-size: 40px;
+            font-weight: 300;
+        }
+    }
+    .links{
+        @include align-flex(row);
+        gap: 25px;
+        a{
+            @include align-flex(row);
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 2px solid gray;
+            border-radius: 10px;
+            gap: 5px;
+            .icon{
+                width: 30px;
+                height: 30px;
+            }
+            .external{
+                width: 20px;
+                height: 20px;
+            }
+            p{
+                font-size: 30px;
+            }
+        }
+    }
+}

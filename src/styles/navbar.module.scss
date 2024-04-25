@@ -2,167 +2,122 @@
 
 .nav{
     @include align-flex(column);
-    background-color: red;
-    width: max-content;
-    justify-content: flex-start;
-    align-items: flex-start;
-    gap: 15px;
-    padding: 15px 10px;
-    height: calc(100vh - 30px);
-    border-radius: 0 25px 25px 0;
-    background-color: $navbar-color;
+    z-index: 1;
+    padding: 0;
     position: fixed;
-    overflow: auto;
     top: 0;
     left: 0;
-    z-index: 1;
-    box-shadow: 5px 5px 5px rgba(black, 0.5);
-    button{
-        padding: 0;
-        background-color: transparent;
+    padding-top: 55px;
+    height: calc(100vh - 55px);
+    justify-content: flex-start;
+    background-color: $navbar-color;
+    border-right: 7px solid $navbar-button-activated;
+    padding-left: 5px;
+    width: max-content;
+    gap: 5px;
+    p, a{
+        margin: 0;
+        font-size: 17px;
+        font-weight: 500;
+        font-family: $main-font;
+        color: rgb(230, 230, 230);
     }
     a{
         text-decoration: none;
-        font-size: 15px;
     }
-    p{
-        margin: 0;
-        font-size: 15px;
+    button{
+        background-color: transparent;
+        padding: 0;
     }
     svg{
         width: 25px;
         height: 25px;
+        color: rgb(230, 230, 230);
     }
-    .title{
-        font-weight: 700;
-        letter-spacing: 3px;
+    .profile{
+        @include align-flex(row);
+        gap: 5px;
+        padding: 5px 10px;
+        border: 2px solid $navbar-button-activated;
+        border-radius: 10px 0 0 10px;
+        margin-right: -2px;
+        img{
+            border-radius: 100px;
+        }
+        .namedev{
+            @include align-flex(column);
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .name{
+            font-weight: 600;
+            font-size: 30px;
+            font-family: $name-font;
+        }
+        .dev{
+            font-size: 20px;
+            font-weight: 300;
+            font-family: $main-font;
+        }
+    }
+    .menu, .close{
+        @include align-flex(column);
+        padding: 10px;
+        position: absolute;
+        top: 5px;
+        left: 5px;
+        &:hover{
+            background-color: $navbar-button-hover;
+        }
     }
     .menu{
-        @include align-flex(column);
-        border-radius: 10px;
-        padding: 5px;
-        svg{
-            height: 30px;
-            width: 30px;
+        border-radius: 5px 0 0 5px;
+    }
+    .close{
+        border-radius: 100px;
+    }
+    .menulink, .menulinkactivated{
+        @include align-flex(row);
+        gap: 5px;
+        padding: 10px;
+        border-radius: 5px 0 0 5px;
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .menulink{
+        &:hover{
+            background-color: $navbar-button-hover;
+        }
+    }
+    .menulinkactivated{
+        background-color: $navbar-button-activated;
+    }
+    .link{
+        @include align-flex(row);
+        gap: 5px;
+        padding: 10px;
+        border-radius: 5px 0 0 5px;
+        width: calc(100% - 20px);
+        justify-content: flex-start;
+        color: rgb(0, 0, 150);
+        .arrow{
+            height: 15px;
+            width: 15px;
         }
         &:hover{
             background-color: $navbar-button-hover;
         }
     }
-    .interns{
-        @include align-flex(column);
-        gap: 10px;
-        .line{
-            height: 1px;
-            background-color: black;
-            display: block;
-            width: 100%;
-        }
-        .profile{
-            @include align-flex(row);
-            gap: 5px;
-            img{
-                border-radius: 100px;
-            }
-            .namedev{
-                @include align-flex(column);
-                justify-content: space-between;
-                align-items: flex-start;
-                gap: 10px;
-            }
-            .name{
-                font-weight: 600;
-                font-size: 17px;
-            }
-            .dev{
-                font-weight: 500;
-            }
-        }
-        .home, .homeactivated{
-            @include align-flex(row);
-            gap: 5px;
-            padding: 5px;
-            border-radius: 10px;
-            width: 100%;
-            justify-content: flex-start;
-        }
-        .home{
-            background-color: transparent;
-            &:hover{
-                background-color: $navbar-button-hover;
-            }
-        }
-        .homeactivated{
-            background-color: $responsive-color;
-            box-shadow: 5px 5px 5px rgba(black, 0.5);
-        }
-        .navigation{
-            @include align-flex(column);
-            align-items: flex-start;
-            gap: 10px;
-            width: 100%;
-            .link, .linkactivated{
-                @include align-flex(row);
-                gap: 5px;
-                padding: 5px;
-                border-radius: 10px;
-                width: 100%;
-                justify-content: flex-start;
-            }
-            .link{
-                &:hover{
-                    background-color: $navbar-button-hover;
-                }
-            }
-            .linkactivated{
-                background-color: $responsive-color;
-            }
-        }
-        .linkscontainer{
-            @include align-flex(column);
-            gap: 10px;
-            align-items: flex-start;
-            width: 100%;
-            .links{
-                @include align-flex(column);
-                align-items: flex-start;
-                gap: 5px;
-                width: 100%;
-                a{
-                    @include align-flex(row);
-                    width: calc(100% - 10px);
-                    gap: 5px;
-                    color: rgb(0, 0, 150);
-                    padding: 5px;
-                    border-radius: 10px;
-                    justify-content: flex-start;
-                    .arrow{
-                        height: 15px;
-                        width: 15px;
-                    }
-                    &:hover{
-                        background-color: $navbar-button-hover;
-                    }
-                }
-            }
-        }
-        .settingscontainer{
-            @include align-flex(column);
-            gap: 5px;
-            align-items: flex-start;
-            width: 100%;
-            .settings{
-                @include align-flex(row);
-                gap: 10px;
-                color: black;
-                padding: 5px;
-                border-radius: 10px;
-                width: calc(100% - 10px);
-                justify-content: flex-start;
-                &:hover{
-                    background-color: $navbar-button-hover;
-                }
-            }
+    .settings{
+        @include align-flex(row);
+        gap: 5px;
+        padding: 10px;
+        border-radius: 5px 0 0 5px;
+        width: calc(100% - 20px);
+        justify-content: flex-start;
+        color: black;
+        &:hover{
+            background-color: $navbar-button-hover;
         }
     }
     .top{
@@ -173,10 +128,12 @@
         @include align-flex(row);
         padding: 5px;
         border-radius: 10px;
-        background-color: $cookies-acept;
-        color: white;
+        background-color: $navbar-color;
+        svg{
+            color: rgb(220, 220, 220);
+        }
         &:hover{
-            background-color: $navbar-button-hover;
+            background-color: rgba($navbar-color, 0.9);
         }
     }
 }

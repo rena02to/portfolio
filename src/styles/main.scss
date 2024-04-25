@@ -3,13 +3,9 @@
 $main-font: "Barlow Condensed", sans-serif;
 $name-font: "Allura", cursive;
 $cookies-container: rgb(205, 209, 222);
-$cookies-acept: rgb(17, 138, 178);
-$navbar-color: rgb(59, 178, 115);
-$navbar-button-hover: rgba(black, 0.2);
-$blue-color: rgb(7, 59, 76);
-$responsive-color: rgb(183, 173, 207);
-$innovation-color: rgb(209, 156, 29);
-$uix-color: rgb(181, 68, 110);
+$navbar-color: rgb(13, 50, 77);
+$navbar-button-hover: rgba(black, 0.15);
+$navbar-button-activated: rgb(30, 86, 49);
 
 @mixin align-flex($direction){
     display: flex;
