@@ -18,7 +18,7 @@
     p, a{
         margin: 0;
         font-size: 17px;
-        font-weight: 500;
+        font-weight: 400;
         font-family: $main-font;
         color: rgb(230, 230, 230);
     }
@@ -50,13 +50,13 @@
             align-items: flex-start;
         }
         .name{
-            font-weight: 600;
+            font-weight: 500;
             font-size: 30px;
             font-family: $name-font;
         }
         .dev{
             font-size: 20px;
-            font-weight: 300;
+            font-weight: 100;
             font-family: $main-font;
         }
     }
