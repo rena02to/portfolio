@@ -15,6 +15,17 @@
         margin: 0;
         font-weight: 600;
     }
+    ul{
+        position: absolute;
+        top: 0;
+        right: 20px;
+        @include align-flex(row);
+        gap: 10px;
+        list-style-position: inside;
+        li{
+            font-size: 15px;
+        }
+    }
     h1, h2, p{
         margin: 0;border-radius: 5px 0 0 5px;
     }
