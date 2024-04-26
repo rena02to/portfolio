@@ -16,14 +16,14 @@
         font-weight: 600;
     }
     ul{
-        position: absolute;
-        top: 0;
-        right: 20px;
         @include align-flex(row);
         gap: 10px;
         list-style-position: inside;
+        padding: 0;
         li{
             font-size: 15px;
+            text-wrap: nowrap;
+            padding: 0;
         }
     }
     h1, h2, p{
