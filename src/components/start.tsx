@@ -7,11 +7,10 @@ import { HiOutlineDocumentText, HiOutlineExternalLink } from 'react-icons/hi';
 export default function Start(){
     const { t } = useTranslation();
     const cards = [
-        { key: 1, value: t('start.seo') },
-        { key: 2, value: t('start.responsive') },
-        { key: 3, value: t('start.innovation') },
         { key: 4, value: 'Next.js' },
         { key: 5, value: 'UI & UX' },
+        { key: 6, value: 'TypeScript' },
+        { key: 7, value: 'Sass' },
     ];
 
     return(
