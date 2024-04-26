@@ -30,7 +30,7 @@
     .textslider{
         width: 150px;
         border-radius: 20px;
-        border: 2px solid gray;
+        border: 1px solid gray;
         padding: 5px 10px;
         display: flex;
         gap: 10px;
@@ -41,6 +41,9 @@
         right: 15px;
         @media (max-width: 500px){
             width: 100px;
+        }
+        @media (max-width: 400px){
+            width: 60px;
         }
         ul{
             @include align-flex(row);
@@ -137,10 +140,10 @@
         }
         @media (max-width: 500px){
             h1{
-                font-size: 45px;
+                font-size: 50px;
             }
             h2{
-                font-size: 20px;
+                font-size: 25px;
             }
             .phrase{
                 font-size: 15px;
@@ -148,10 +151,16 @@
                 flex-wrap: wrap;
             }
         }
+        @media (max-width: 400px){
+            h1{
+                font-size: 35px;
+            }
+        }
     }
     .links{
         @include align-flex(row);
         gap: 25px;
+        flex-wrap: wrap;
         a{
             @include align-flex(row);
             text-decoration: none;
@@ -238,7 +247,7 @@
                 }
             }
         }
-        @media (max-width: 1000px){
+        @media (max-width: 800px){
             gap: 10px;
             a{
                 p{
@@ -256,6 +265,7 @@
         }
         @media (max-width: 600px){
             a{
+                border: 1px solid gray;
                 p{
                     font-size: 15px;
                 }
@@ -283,6 +293,9 @@
                     height: 10px;
                 }
             }
+        }
+        @media (max-width: 400px){
+            width: 75%;
         }
     }
 }
