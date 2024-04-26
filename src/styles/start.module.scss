@@ -166,6 +166,49 @@
             }
             p{
                 font-size: 30px;
+                color: black;
+            }
+        }
+        .linkedin{
+            &:hover{
+                background-color: rgb(0, 85, 254);
+                border: 2px solid rgb(0, 85, 254);
+                box-shadow: 5px 5px 5px rgba(black, 0.5);
+                p, svg{
+                    color: white;
+                    text-shadow: 5px 5px 5px black;
+                }
+            }
+            svg{
+                color: rgb(0, 85, 254);
+            }
+        }
+        .github{
+            &:hover{
+                background-color: rgb(75, 75, 75);
+                border: 2px solid rgb(75, 75, 75);
+                box-shadow: 5px 5px 5px rgba(black, 0.5);
+                p, svg{
+                    color: white;
+                    text-shadow: 5px 5px 5px black;
+                }
+            }
+            svg{
+                color: black;
+            }
+        }
+        .curriculum{
+            &:hover{
+                background-color: $navbar-button-activated;
+                border: 2px solid $navbar-button-activated;
+                box-shadow: 5px 5px 5px rgba(black, 0.5);
+                p, svg{
+                    color: white;
+                    text-shadow: 5px 5px 5px rgba(black, 0.7);
+                }
+            }
+            svg{
+                color: black;
             }
         }
         @media (max-width: 1600px){
