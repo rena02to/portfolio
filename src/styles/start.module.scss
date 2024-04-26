@@ -28,7 +28,7 @@
         }
     }
     .textslider{
-        width: 150px;
+        width: 200px;
         border-radius: 20px;
         border: 1px solid gray;
         padding: 5px 10px;
@@ -39,6 +39,9 @@
         position: absolute;
         top: 15px;
         right: 15px;
+        @media (max-width: 1000px){
+            width: 150px;
+        }
         @media (max-width: 500px){
             width: 100px;
         }
