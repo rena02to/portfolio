@@ -54,11 +54,14 @@
                 text-wrap: nowrap;
                 padding: 0;
                 margin: 0;
-                display: flex;
+                @include align-flex(row);
                 gap: 10px;
                 &::before{
                     content: '';
-                    border: 1px solid gray;
+                    background-color: gray;
+                    height: 5px;
+                    width: 5px;
+                    border-radius: 100%;
                 }
                 @media (max-width: 600px){
                     font-size: 12px;
