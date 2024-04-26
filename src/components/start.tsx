@@ -17,11 +17,18 @@ export default function Start(){
     return(
         <section className={style.home} id='start'>
             <h1 className={style.name}>Renato Alves</h1>
-            <ul>
-                {cards.map((card) => (
-                    <li key={card.key}>{card.value}</li>
-                ))}
-            </ul>
+            <div className={style.textslider}>
+                <ul>
+                    {cards.map((card) => (
+                        <li key={card.key}>{card.value}</li>
+                    ))}
+                </ul>
+                <ul>
+                    {cards.map((card) => (
+                        <li key={card.key}>{card.value}</li>
+                    ))}
+                </ul>
+            </div>
             <div className={style.text}>
                 <h2 className={style.portfolio}>PORTFOLIO</h2>
                 <h1>{t('start.dev.1')}<br/>{t('start.dev.2')}</h1>
