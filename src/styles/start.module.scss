@@ -57,6 +57,7 @@
             animation: scrolltext 10s linear infinite;
             li{
                 font-size: 15px;
+                font-weight: 500;
                 text-wrap: nowrap;
                 padding: 0;
                 margin: 0;
@@ -64,7 +65,7 @@
                 gap: 10px;
                 &::before{
                     content: '';
-                    background-color: gray;
+                    background-color: rgb(100, 100, 100);
                     height: 5px;
                     width: 5px;
                     border-radius: 100%;

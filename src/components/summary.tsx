@@ -4,16 +4,24 @@ import { useTranslation } from 'react-i18next';
 
 export default function Summary(){
     const { t } = useTranslation();
-    const skills = {
-        hard: [
-            { key: null, value: null, icon: null },
-        ],
-        soft: [
-            { key: null, value: null, icon: null },
-        ]
-    };
+    const skills = [
+        { key: 1, value: "HTML + CSS" },
+        { key: 2, value: "Next.js" },
+        { key: 3, value: "JavaScript" },
+        { key: 4, value: "Sass" },
+        { key: 5, value: "SEO" },
+        { key: 6, value: "UI + UX" },
+        { key: 7, value: t('summary.skills.responsive') },
+        { key: 8, value: "Git + GitHub" },
+    ];
     const experiences = [
-        { key: null, title: null, value: null }
+        { key: null, title: null, value: null },
+        { key: null, title: null, value: null },
+        { key: null, title: null, value: null },
+        { key: null, title: null, value: null },
+        { key: null, title: null, value: null },
+        { key: null, title: null, value: null },
+        { key: null, title: null, value: null },
     ];
 
     return(
@@ -26,42 +34,20 @@ export default function Summary(){
                     <h1 className={style.dev}>{t('summary.dev')}</h1>
                     <div className={style.about}>
                         <h2>{t('summary.about.title')}</h2>
-                        <p>{t('summary.about.text')}</p>
+                        <div className={style.text}>
+                            <p>{t('summary.about.text1')}</p>
+                            <p>{t('summary.about.text2')}</p>
+                            <p>{t('summary.about.text3')}</p>
+                            <p>{t('summary.about.text4')}</p>
+                        </div>
                     </div>
                     <div className={style.skills}>
                         <h2>{t('summary.skills.title')}</h2>
-                        <div className={style.union}>
-                            <div className={style.titleskills}>
-                                <h3>{t('summary.skills.hard')}</h3>
-                                <div className={style.hard}>
-                                    {skills.hard.map((skill) => (
-                                        <div className={style.card} key={skill.key}>
-                                            {skill.icon}
-                                            <p>{skill.value}</p>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className={style.titleskills}>
-                                <h3>{t('summary.skills.soft.title')}</h3>
-                                <div className={style.soft}>
-                                    {skills.soft.map((skill) => (
-                                        <div className={style.card} key={skill.key}>
-                                            {skill.icon}
-                                            <p>{skill.value}</p>
-                                        </div>
-                                    ))}
-                                </div>
-                            </div>
-                        </div>
-                        <div className={style.union2}>
-                            {experiences.map((exp) => (
-                                <div className={style.card} key={exp.key}>
-                                    <h3>{exp.title}</h3>
-                                    <p>{exp.value}</p>
-                                </div>
+                        <ul>
+                            {skills.map((skill) => (
+                                <li key={skill.key}>{skill.value}</li>
                             ))}
-                        </div>
+                        </ul>
                     </div>
                 </div>
             </div>

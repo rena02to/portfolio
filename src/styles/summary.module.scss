@@ -1,18 +1,18 @@
 @import './main.scss';
 
 .summary{
-    padding-left: 75px;
+    padding-left: 70px;
     @include align-flex(column);
     padding-bottom: 250px; //remover
     .profile{
-        background-color: red;
+        background-color: $profile-background;
         width: 95%;
         border-radius: 15px;
-        padding-bottom: 25px;
+        padding-bottom: 20px;
         .image{
             border-radius: 15px 15px 0 0;
             width: 100%;
-            height: 150px;
+            height: 175px;
             background-image: url('/images/background.jpg');
             background-size: cover;
         }
@@ -36,130 +36,80 @@
             .name{
                 font-family: $name-font;
                 font-size: 35px;
+                @media (max-width: 600px){
+                    font-size: 30px;
+                }
             }
             .dev{
                 font-size: 25px;
                 font-weight: 400;
                 margin-top: -10px;
+                @media (max-width: 600px){
+                    font-size: 20px;
+                }
             }
             .about{
-                width: calc(100% - 60px);
-                @include align-flex(column);
-                align-items: flex-start;
-                gap: 15px;
-                background-color: gray;
-                margin-top: 25px;
-                background-color: gray;
-                padding: 30px;
-                border-radius: 5px;
-                h2{
-                    margin: 0;
-                    font-weight: 500;
-                    font-size: 25px;
-                }
-                p{
-                    margin: 0;
-                    font-size: 17px;
-                    padding: 10px 30px;
-                }
-            }
-            .skills{
                 width: calc(100% - 40px);
                 @include align-flex(column);
                 align-items: flex-start;
-                gap: 20px;
-                background-color: gray;
-                margin-top: 25px;
-                background-color: gray;
+                gap: 10px;
+                margin-top: 15px;
                 padding: 20px;
                 border-radius: 5px;
+                border: 1px solid gray;
                 h2{
-                    font-size: 25px;
                     margin: 0;
                     font-weight: 500;
+                    font-size: 25px;
+                    @media (max-width: 600px){
+                        font-size: 20px;
+                    }
                 }
-                .union{
-                    width: 100%;
-                    @include align-flex(row);
-                    justify-content: center;
-                    gap: 15px;
-                    flex-wrap: wrap;
-                    .titleskills{
-                        @include align-flex(column);
-                        background-color: rgba(blue, 0.2);
-                        width: calc(50% - 70px);
-                        border-radius: 5px;
-                        align-items: flex-start;
-                        padding: 30px;
-                        gap: 10px;
-                        @media (max-width: 1000px){
-                            width: 100%;
-                        }
-                        h3{
-                            margin: 0;
-                            font-weight: 400;
-                            font-size: 20px;
-                        }
-                        .hard, .soft{
-                            @include align-flex(row);
-                            width: 100%;
-                            flex-wrap: wrap;
-                            gap: 10px;
-                            .card{
-                                background-color: gray;
-                                height: 70px;
-                                width: 70px;
-                                border-radius: 10px;
-                                @include align-flex(column);
-                                padding: 5px;
-                                p{
-                                    margin: 0;
-                                    font-weight: 400;
-                                    font-size: 17px;
-                                }
-                                svg{
-                                    width: 50px;
-                                    height: 50px;
-                                }
-                            }
+                .text{
+                    @include align-flex(column);
+                    align-items: flex-start;
+                    gap: 20px;
+                    padding: 10px 20px;
+                    p{
+                        margin: 0;
+                        font-size: 17px;
+                        @media (max-width: 600px){
+                            font-size: 14px;
                         }
                     }
                 }
-                .union2{
-                    width: 100%;
-                    @include align-flex(row);
-                    justify-content: center;
+            }
+            .skills{
+                @include align-flex(column);
+                border: 1px solid gray;
+                width: calc(100% - 40px);
+                border-radius: 5px;
+                align-items: flex-start;
+                gap: 15px;
+                padding: 20px;
+                margin-top: 25px;
+                h2{
+                    margin: 0;
+                    font-weight: 400;
+                    font-size: 25px;
+                    @media (max-width: 600px){
+                        font-size: 20px;
+                    }
+                }
+                ul{
+                    @include align-flex(column);
                     flex-wrap: wrap;
-                    gap: 20px;
-                    .card{
-                        @include align-flex(column);
-                        background-color: rgba(blue, 0.2);
-                        width: calc(30% - 70px);
-                        border-radius: 5px;
-                        align-items: flex-start;
-                        padding: 30px;
-                        gap: 10px;
-                        @media (max-width: 1600px){
-                            width: calc(35% - 70px);
-                        }
-                        @media (max-width: 1400px){
-                            width: calc(40% - 70px);
-                        }
-                        @media (max-width: 1200px){
-                            width: calc(50% - 70px);
-                        }
-                        @media (max-width: 1000px){
-                            width: calc(100% - 70px);
-                        }
-                        h3{
-                            margin: 0;
-                            font-weight: 400;
-                            font-size: 20px;
-                        }
-                        p{
-                            padding: 15px 30px;
-                            margin: 0;
-                        }
+                    gap: 10px;
+                    align-items: flex-start;
+                    margin: 0;
+                    font-size: 17px;
+                    @media (max-width: 600px){
+                        font-size: 14px;
+                    }
+                    li{
+                        padding: 5px 10px;
+                        border-radius: 10px;
+                        background-color: rgb(210, 210, 210);
                     }
                 }
             }

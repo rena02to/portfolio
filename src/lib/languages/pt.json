@@ -37,15 +37,15 @@
         "summary": {
             "about": {
                 "title": "Um pouco sobre mim",
-                "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum felis ac diam varius, eu vehicula nisl consectetur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Mauris nec lacus tincidunt, rhoncus purus a, mattis justo. Donec in arcu urna. Integer tempor risus eu velit vehicula, ut mattis nisi convallis. Nulla facilisi. Nam ullamcorper sodales fringilla. Vestibulum aliquet id odio vel hendrerit. Phasellus euismod luctus nulla, vel interdum urna dignissim at. Sed vel suscipit dui. Sed nec feugiat lacus, non tempus est. Sed et tempor purus. Duis sit amet lorem quis odio rhoncus posuere. Nullam vehicula ut mi ac dignissim. Sed rhoncus tellus in nulla consectetur, vel fermentum mauris tincidunt."
+                "text1": "Sou um desenvolvedor front-end apaixonado por tecnologia, design e tudo o que está relacionado ao universo digital. Atualmente encontro-me aprimorando minhas habilidades em desenvolvimento front-end, estudando mais aprofundadamente os conceitos do design responsivo, UI, UX e SEO.",
+                "text2": "Além de minha paixão por tecnologia, sou um exímio amante do universo geek e gamer (e sim, Resident evil é o melhor game, e batman é o herói mais forte). Sempre que tenho a chance, acabo mergulhando em mundos virtuais e ficando imerso em novas aventuras.",
+                "text3": "Sou também um entusiasta de cibersegurança e estou buscando constantemente adquirir e aprimorar meus conhecimentos na área.",
+                "text4": "Combinando minha paixão por tecnologia e meu amor por games e cultura geek, busco criar experiências digitais envolventes e intuitivas que cativem os usuários e os transportem para novos mundos. Estou constantemente buscando aprender e crescer, explorando novas tecnologias e tendências para oferecer soluções inovadoras e criativas."
             },
             "dev": "Desenvolvedor front end",
             "skills": {
                 "title": "Habilidades",
-                "hard": "Técnicas",
-                "soft": {
-                    "title": "Comportamentais"
-                }
+                "responsive": "Design responsivo"
             }
         }
     }
