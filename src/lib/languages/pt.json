@@ -3,11 +3,14 @@
         "cookies":{
             "message": {
                 "p1": "Este site usa cookies para garantir que você obtenha a ",
-                "span": "melhor experiência",
-                "p2": ". Ao continuar, você concorda com o uso de cookies."
+                "span1": "melhor experiência",
+                "p2": ". Ao clicar em ",
+                "span2": "Aceitar",
+                "p3": " você concorda com nossa ",
+                "link": "Política de cookies"
             },
-            "acept": "Aceitar cookies",
-            "denied": "Negar cookies"
+            "acept": "Aceitar",
+            "denied": "Negar"
         },
         "navbar": {
             "dev": "Desenvolvedor front end",

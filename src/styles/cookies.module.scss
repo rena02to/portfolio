@@ -3,7 +3,7 @@
 .cookiesDiv{
     @include align-flex(column);
     background-color: transparent;
-    width: 250px;
+    width: 300px;
     color: black;
     background-color: $cookies-container;
     padding: 30px 25px 20px 25px;
@@ -22,14 +22,15 @@
     }
     .buttons{
         @include align-flex(row);
-        width: 90%;
+        width: 75%;
         justify-content: space-between;
         button{
             font-family: $main-font;
-            border-radius: 100px;
+            border-radius: 10px;
             padding: 10px 12px;
             font-size: 15px;
-            font-weight: 500;
+            font-weight: 400;
+            width: 47%;
             @media (max-width: 900px){
                 font-size: 12px;
                 padding: 10px;
@@ -58,8 +59,11 @@
             font-size: 12px;
         }
         span{
-            color: $navbar-color;
             font-weight: 600;
+        }
+        a{
+            font-weight: 600;
+            color: blue;
         }
     }
     .close{

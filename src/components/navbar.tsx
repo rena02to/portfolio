@@ -102,7 +102,7 @@ export default function Navbar(){
                     </>
                     : null
                 }
-                <Link href='/settings' className={style.settings} title={t('navbar.settings')}>
+                <Link href='/configuracoes' className={style.settings} title={t('navbar.settings')}>
                     <IoSettingsOutline/>
                     {menuOpen ? <p>{t('navbar.settings')}</p> : null}
                 </Link>

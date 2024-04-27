@@ -2,12 +2,15 @@
     "translation": {
         "cookies":{
             "message": {
-                "p1": "Este site usa cookies para garantir que você obtenha a ",
-                "span": "melhor experiência",
-                "p2": ". Ao continuar, você concorda com o uso de cookies."
+                "p1": "This site uses cookies to ensure you receive one ",
+                "span1": "best experience",
+                "p2": ". By clicking ",
+                "span2": "Accept",
+                "p3": " you agree to our",
+                "link": "Cookies Policy"
             },
-            "acept": "Aceitar cookies",
-            "denied": "Negar cookies"
+            "acept": "Accept",
+            "denied": "Deny"
         },
         "navbar": {
             "dev": "Font end developer",
