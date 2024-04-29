@@ -35,13 +35,36 @@
             "phrase": "Converting ideas into memorable digital experiences..."
         },
         "summary": {
-            "titles": {
-                "about": "A little about myself",
-                "skills": "Habilidades",
-                "experiences": "Experiences",
-                "certificates": "Certificates"
+            "about": {
+                "title": "A little about myself",
+                "text1": "I'm a front-end developer passionate about technology, design and everything related to the digital universe. I'm currently improving my skills in front-end development, studying the concepts of responsive design, UI, UX and SEO in more depth.",
+                "text2": "In addition to my passion for technology, I'm an excellent lover of the geek and gamer universe (and yes, Resident Evil is the best game, and Batman is the strongest hero). Whenever I have the chance, I end up diving into virtual worlds and becoming immersed in new adventures.",
+                "text3": "I'm also a cybersecurity enthusiast and am constantly seeking to acquire and improve my knowledge in the area.",
+                "text4": "Combining my passion for technology and my love of games and geek culture, I seek to create engaging and intuitive digital experiences that captivate users and transport them to new worlds. I'm constantly seeking to learn and grow, exploring new technologies and trends to offer innovative and creative solutions."
             },
-            "dev": "Front end developer"
+            "dev": "Front end developer",
+            "skills": {
+                "title": "Skills",
+                "responsive": "Responsive design",
+                "desc": {
+                    "front": {
+                        "title": "Front end development",
+                        "desc": "With specialized skills in front end development, I'm familiar with technologies such as Next.js, SASS and JavaScript, which form the solid foundation for creating engaging and responsive digital experiences. In addition to mastering these tools, I have an innovation-oriented mindset, constantly seeking creative ways to improve the design and functionality of applications, ensuring that each project exceeds expectations and offers an exceptional experience to users."
+                    },
+                    "seo": {
+                        "title": "Search Engine Optimization (SEO)",
+                        "desc": "With comprehensive knowledge in SEO (Search Engine Optimization), I can optimize every aspect of web development to ensure high visibility in search engines. From properly structuring HTML to creating relevant content and optimizing meta tags, I am committed to driving organic traffic and improving rankings in search results, thereby increasing the visibility and reach of the websites I create."
+                    },
+                    "uix": {
+                        "title": "User interface and experience (UI e UX)",
+                        "desc": "With a strong understanding of UI (User Interface) and UX (User Experience), I can design intuitive and engaging digital interfaces that deliver an exceptional user experience. By focusing on usability, accessibility and user satisfaction, I can create designs that not only visually impress, but also maximize efficiency and ease of use. UI and UX are essential to ensuring your website visitors have a positive experience, resulting in greater engagement, retention and conversion."
+                    },
+                    "responsive": {
+                        "title": "Responsive design",
+                        "desc": "With experience in responsive design, I have solid skills in creating interfaces that adapt perfectly to different devices and screen sizes. Using advanced techniques in HTML, CSS, Sass and the Next framework, I can ensure that each project looks flawless on any device, providing a consistent and intuitive experience for users, regardless of the device they are using."
+                    }
+                }
+            }
         }
     }
 }

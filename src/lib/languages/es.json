@@ -35,13 +35,36 @@
             "phrase": "Convirtiendo ideas en experiencias digitales memorables..."
         },
         "summary": {
-            "titles": {
-                "about": "Un poco acerca de mi",
-                "skills": "Habilidades",
-                "experiences": "Experiencias",
-                "certificates": "Certificados"
+            "about": {
+                "title": "Un poco de mi",
+                "text1": "Soy un desarrollador front-end apasionado por la tecnología, el diseño y todo lo relacionado con el universo digital. Actualmente estoy mejorando mis habilidades en desarrollo front-end, estudiando con mayor profundidad los conceptos de diseño responsivo, UI, UX y SEO.",
+                "text2": "Además de mi pasión por la tecnología, soy un excelente amante del universo geek y gamer (y sí, Resident Evil es el mejor juego, y Batman es el héroe más fuerte). Siempre que tengo la oportunidad, termino sumergiéndome en mundos virtuales y sumergiéndome en nuevas aventuras.",
+                "text3": "También soy un entusiasta de la ciberseguridad y busco constantemente adquirir y mejorar mis conocimientos en el área.",
+                "text4": "Combinando mi pasión por la tecnología y mi amor por los juegos y la cultura geek, busco crear experiencias digitales atractivas e intuitivas que cautiven a los usuarios y los transporten a nuevos mundos. Busco constantemente aprender y crecer, explorando nuevas tecnologías y tendencias para ofrecer soluciones innovadoras y creativas."
             },
-            "dev": "Desarrollador front end"
+            "dev": "desarrollador front-end",
+            "skills": {
+                "title": "Habilidades",
+                "responsive": "Diseño de respuesta",
+                "desc": {
+                    "front": {
+                        "title": "Desarrollo front-end",
+                        "desc": "Con habilidades especializadas en desarrollo front-end, estoy familiarizado con tecnologías como Next.js, SASS y JavaScript, que forman la base sólida para crear experiencias digitales atractivas y receptivas. Además de dominar estas herramientas, tengo una mentalidad orientada a la innovación, buscando constantemente formas creativas de mejorar el diseño y la funcionalidad de las aplicaciones, asegurando que cada proyecto supere las expectativas y ofrezca una experiencia excepcional a los usuarios."
+                    },
+                    "seo": {
+                        "title": "Optimización de motores de búsqueda (SEO)",
+                        "desc": "Con amplios conocimientos de SEO (Search Engine Optimization - Optimización de Motores de Búsqueda), puedo optimizar todos los aspectos del desarrollo web para garantizar una alta visibilidad en los motores de búsqueda. Desde estructurar correctamente HTML hasta crear contenido relevante y optimizar metaetiquetas, me comprometo a generar tráfico orgánico y mejorar la clasificación en los resultados de búsqueda, aumentando así la visibilidad y el alcance de los sitios web que creo."
+                    },
+                    "uix": {
+                        "title": "Interfaz de usuario y experiencia (UI e UX)",
+                        "desc": "Con un sólido conocimiento de UI (User Interface - Interfaz de Usuario) y UX (User Experience - Experiencia de Usuario), puedo diseñar interfaces digitales intuitivas y atractivas que brinden una experiencia de usuario excepcional. Al centrarme en la usabilidad, la accesibilidad y la satisfacción del usuario, puedo crear diseños que no sólo impresionan visualmente, sino que también maximizan la eficiencia y la facilidad de uso. UI y UX son esenciales para garantizar que los visitantes de su sitio web tengan una experiencia positiva, lo que resulta en una mayor participación, retención y conversión."
+                    },
+                    "responsive": {
+                        "title": "Diseño de respuesta",
+                        "desc": "Con experiencia en diseño responsivo, tengo sólidas habilidades en la creación de interfaces que se adaptan perfectamente a diferentes dispositivos y tamaños de pantalla. Usando técnicas avanzadas en HTML, CSS, Sass y el framework Next, puedo asegurar que cada proyecto se vea impecable en cualquier dispositivo, brindando una experiencia consistente e intuitiva para los usuarios, independientemente del dispositivo que estén usando."
+                    }
+                }
+            }
         }
     }
 }

@@ -45,7 +45,25 @@
             "dev": "Desenvolvedor front end",
             "skills": {
                 "title": "Habilidades",
-                "responsive": "Design responsivo"
+                "responsive": "Design responsivo",
+                "desc": {
+                    "front": {
+                        "title": "Desenvolvimento front end",
+                        "desc": "Com habilidades especializadas em desenvolvimento front end, estou familiarizado com tecnologias como Next.js, SASS e JavaScript, que formam a base sólida para criar experiências digitais envolventes e responsivas. Além de dominar essas ferramentas, tenho uma mentalidade voltada para a inovação, buscando constantemente maneiras criativas de melhorar o design e a funcionalidade das aplicações, garantindo que cada projeto ultrapasse as expectativas e ofereça uma experiência excepcional aos usuários."
+                    },
+                    "seo": {
+                        "title": "Otimização para motores de busca (SEO)",
+                        "desc": "Com conhecimento abrangente em SEO (Search Engine Optimization - Otimização para Motores de Busca), posso otimizar cada aspecto do desenvolvimento web para garantir uma alta visibilidade nos mecanismos de busca. Desde a estruturação adequada do HTML até a criação de conteúdo relevante e a otimização de meta tags, estou comprometido em impulsionar o tráfego orgânico e melhorar o ranking nos resultados de pesquisa, aumentando assim a visibilidade e o alcance dos sites que crio."
+                    },
+                    "uix": {
+                        "title": "Interface e experiência do usuário (UI e UX)",
+                        "desc": "Com uma forte compreensão de UI (User Interface - Interface de Usuário) e UX (User Experience - Experiência do Usuário), posso projetar interfaces digitais intuitivas e atraentes que proporcionam uma experiência de usuário excepcional. Ao focar na usabilidade, acessibilidade e na satisfação do usuário, posso criar designs que não apenas impressionam visualmente, mas também maximizam a eficiência e a facilidade de uso. UI e UX são essenciais para garantir que os visitantes do seu site tenham uma experiência positiva, resultando em maior engajamento, retenção e conversão."
+                    },
+                    "responsive": {
+                        "title": "Design responsivo",
+                        "desc": "Com experiência em design responsivo, tenho habilidades sólidas em criar interfaces que se adaptam perfeitamente a diferentes dispositivos e tamanhos de tela. Utilizando técnicas avançadas de HTML, CSS, Sass e o framework Next, posso garantir que cada projeto tenha uma aparência impecável em qualquer dispositivo, proporcionando uma experiência consistente e intuitiva para os usuários, independentemente do dispositivo que estão utilizando."
+                    }
+                }
             }
         }
     }

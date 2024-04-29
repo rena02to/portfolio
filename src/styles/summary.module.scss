@@ -3,7 +3,6 @@
 .summary{
     padding-left: 70px;
     @include align-flex(column);
-    padding-bottom: 250px; //remover
     .profile{
         background-color: $profile-background;
         width: 95%;
@@ -85,31 +84,66 @@
                 width: calc(100% - 40px);
                 border-radius: 5px;
                 align-items: flex-start;
-                gap: 15px;
-                padding: 20px;
+                gap: 30px;
+                padding: 20px 20px 40px 20px;
                 margin-top: 25px;
                 h2{
                     margin: 0;
-                    font-weight: 400;
+                    font-weight: 500;
                     font-size: 25px;
                     @media (max-width: 600px){
                         font-size: 20px;
                     }
                 }
                 ul{
-                    @include align-flex(column);
+                    @include align-flex(row);
                     flex-wrap: wrap;
                     gap: 10px;
                     align-items: flex-start;
                     margin: 0;
                     font-size: 17px;
+                    list-style: none;
+                    width: 95%;
+                    margin-top: 25px;
+                    padding: 0;
                     @media (max-width: 600px){
                         font-size: 14px;
                     }
                     li{
-                        padding: 5px 10px;
+                        padding: 10px;
                         border-radius: 10px;
                         background-color: rgb(210, 210, 210);
+                        @include align-flex(row);
+                        gap: 5px;
+                        box-shadow: 5px 5px 5px rgba(black, 0.3);
+                        svg{
+                            color: rgb(50, 50, 50);
+                            width: 25px;
+                            height: 25px;
+                            @media (max-width: 600px){
+                                width: 25px;
+                                height: 25px;
+                            }
+                        }
+                    }
+                }
+                .desc{
+                    padding: 10px 25px;
+                    @include align-flex(column);
+                    gap: 5px;
+                    align-items: flex-start;
+                    h3{
+                        font-weight: 500;
+                        font-size: 20px;
+                        margin: 0;
+                    }
+                    p{
+                        font-size: 17px;
+                        padding: 0 15px;
+                        margin: 0;
+                        @media (max-width: 600px){
+                            font-size: 14px;
+                        }
                     }
                 }
             }
