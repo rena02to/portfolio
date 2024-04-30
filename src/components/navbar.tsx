@@ -63,6 +63,7 @@ export default function Navbar(){
         }else{
             document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
         }
+        setMenuOpen(false);
     }
 
     return(
@@ -102,7 +103,7 @@ export default function Navbar(){
                     </>
                     : null
                 }
-                <Link href='/configuracoes' className={style.settings} title={t('navbar.settings')}>
+                <Link href='/configuracoes' className={style.settings} title={t('navbar.settings')} onClick={() => setMenuOpen(false)}>
                     <IoSettingsOutline/>
                     {menuOpen ? <p>{t('navbar.settings')}</p> : null}
                 </Link>
