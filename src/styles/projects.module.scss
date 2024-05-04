@@ -1,6 +1,8 @@
 @import './main.scss';
 
 .projects{
-    padding-top: 25px;
-    padding-left: 70px;
+    padding: 25px 15px 50px 70px; //remover o padding bottom
+    .projectscontainer{
+        width: 100%;
+    }
 }

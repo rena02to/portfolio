@@ -48,10 +48,24 @@ export default function Projects(){
 
     return(
         <section id="projects" className={style.projects}>
-            {projects.map((project) => (
-                <div className={style.cardproject} key={project.key}>
-                </div>
-            ))}
+            <div className={style.projectscontainer}>
+                {projects.map((project) => (
+                    <div className={style.cardproject} key={project.key}>
+                        {project.image}
+                        {project.name}
+                        {project.desc}
+                        {project.stack.map((stack) => (
+                            <div key={stack.key} className={style.stack}>
+                                {stack.name}
+                            </div>
+                        ))}
+                        {project.github}
+                        {project.link}
+                        {project.pinned ? <p>icon</p> : null}
+                        {project.status}
+                    </div>
+                ))}
+            </div>
         </section>
     );
 }
