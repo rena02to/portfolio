@@ -13,11 +13,11 @@ button{
     cursor: pointer;
     border: 0px solid transparent;
 }
-/*::-webkit-scrollbar{
+::-webkit-scrollbar{
     width: 7px;
     background-color: rgb(200, 200, 200);
 }
 ::-webkit-scrollbar-thumb {
-    background-color: rgb(39, 175, 5);
+    background-color: $navbar-button-activated;
     border-radius: 20px;
-}*/
+}
