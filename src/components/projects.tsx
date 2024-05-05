@@ -1,48 +1,31 @@
 import style from '@/styles/projects.module.scss';
+import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
+import { FaGithub, FaLink, FaStar } from 'react-icons/fa6';
+import { HiOutlineExternalLink } from 'react-icons/hi';
 
 export default function Projects(){
     const { t } = useTranslation();
     const projects = [
         {
-            key: null,
-            name: null,
-            desc: null,
+            key: 1,
+            name: <h3>Teste</h3>,
+            desc: <p className={style.desc}>Sou um desenvolvedor front-end apaixonado por tecnologia, design e tudo o que está relacionado ao universo digital. Atualmente, sou bacharelando em Ciência da Computação, e encontro-me aprimorando minhas habilidades em desenvolvimento front-end, estudando mais aprofundadamente os conceitos do design responsivo, UI, UX e SEO. Sou um desenvolvedor front-end apaixonado por tecnologia, design e tudo o que está relacionado ao universo digital. Atualmente, sou bacharelando em Ciência da Computação, e encontro-me aprimorando minhas habilidades em desenvolvimento front-end, estudando mais aprofundadamente os conceitos do design responsivo, UI, UX e SEO.</p>,
             stack: [
                 {
-                    key: null,
-                    name: null
+                    key: 1,
+                    name: 'Teste'
                 },
                 {
-                    key: null,
-                    name: null
-                }
-            ],
-            github: null,
-            link: null,
-            image: null,
-            status: null,
-            pinned: null
-        },
-        {
-            key: null,
-            name: null,
-            desc: null,
-            stack: [
-                {
-                    key: null,
-                    name: null
+                    key: 2,
+                    name: 'teste teste'
                 },
-                {
-                    key: null,
-                    name: null
-                }
             ],
-            github: null,
-            link: null,
-            image: null,
-            status: null,
-            pinned: null
+            github: 'https://github.com/rena02to',
+            link: 'https://renatoalves.site',
+            image: <Image className={style.image} src='/images/foto.jpg' alt="Project image" width={250} height={300}/>,
+            status: <p className={style.development}>Em desenvolvimento</p>,
+            favorite: true
         }
     ]
 
@@ -52,16 +35,20 @@ export default function Projects(){
                 {projects.map((project) => (
                     <div className={style.cardproject} key={project.key}>
                         {project.image}
-                        {project.name}
-                        {project.desc}
-                        {project.stack.map((stack) => (
-                            <div key={stack.key} className={style.stack}>
-                                {stack.name}
+                        <div className={style.projectinfos}>
+                            {project.name}
+                            {project.desc}
+                            <ul className={style.stackcontainer}>
+                                {project.stack.map((stack) => (
+                                    <li key={stack.key}>{stack.name}</li>
+                                ))}
+                            </ul>
+                            <div className={style.links}>
+                                <a href={project.link}><FaLink className={style.icon}/>Site<HiOutlineExternalLink className={style.external}/></a>
+                                <a href={project.github}><FaGithub className={style.icon}/>Código<HiOutlineExternalLink className={style.external}/></a>
                             </div>
-                        ))}
-                        {project.github}
-                        {project.link}
-                        {project.pinned ? <p>icon</p> : null}
+                        </div>
+                        {project.favorite ? <FaStar className={style.favorite}/> : null}
                         {project.status}
                     </div>
                 ))}

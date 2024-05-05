@@ -1,8 +1,121 @@
 @import './main.scss';
 
 .projects{
-    padding: 25px 15px 50px 70px; //remover o padding bottom
+    padding: 25px 0 50px 70px; //remover o padding bottom
+    @include align-flex(auto);
+    p, h3{
+        margin: 0;
+    }
     .projectscontainer{
-        width: 100%;
+        width: 95%;
+        @include align-flex(row);
+        flex-wrap: wrap;
+        gap: 20px;
+        .cardproject{
+            background-color: $profile-background;
+            @include align-flex(row);
+            padding: 20px;
+            border-radius: 15px;
+            width: max-content;
+            position: relative;
+            gap: 20px;
+            overflow: hidden;
+            align-items: flex-start;
+            width: 75%;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            @media (max-width: 800px){
+                flex-direction: column;
+                align-items: center;
+            }
+            .image{
+                border-radius: 15px;
+            }
+            .projectinfos{
+                @include align-flex(column);
+                gap: 25px;
+                h3{
+                    font-size: 25px;
+                    font-weight: 500;
+                }
+                .desc{
+                    font-size: 17px;
+                }
+                .stackcontainer{
+                    list-style: none;
+                    @include align-flex(row);
+                    flex-wrap: wrap;
+                    gap: 10px;
+                    margin: 0;
+                    padding: 0;
+                    li{
+                        border: 1px solid gray;
+                        padding: 10px;
+                        border-radius: 10px;
+                        font-size: 17px;
+                        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+                    }
+                }
+                .links{
+                    @include align-flex(row);
+                    gap: 10px;
+                    a{
+                        @include align-flex(row);
+                        text-decoration: none;
+                        border: 2px solid gray;
+                        gap: 5px;
+                        color: black;
+                        font-size: 17px;
+                        padding: 10px;
+                        border-radius: 10px;
+                        &:hover{
+                            background-color: $navbar-button-activated;
+                            border: 2px solid $navbar-button-activated;
+                            box-shadow: 5px 5px 5px rgba(black, 0.5);
+                            p, svg{
+                                color: white;
+                                text-shadow: 5px 5px 5px rgba(black, 0.7);
+                            }
+                        }
+                        .icon{
+                            width: 20px;
+                            height: 20px;
+                        }
+                        .external{
+                            width: 15px;
+                            height: 15px;
+                            color: blue;
+                        }
+                    }
+                }
+            }
+            .development, .finish, .testing{
+                position: absolute;
+                width: 200px;
+                text-align: center;
+                font-size: 20px;
+                transform: rotateZ(-40deg);
+                left: -75px;
+                top: 35px;
+                padding: 2px 40px;
+                box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+            }
+            .development{
+                background-color: $blue-color;
+            }
+            .finish{
+                background-color: $green-color;
+            }
+            .testing{
+                background-color: $yellow-color;
+            }
+            .favorite{
+                position: absolute;
+                top: 25px;
+                right: 25px;
+                height: 25px;
+                width: 25px;
+                color: $yellow-color;
+            }
+        }
     }
 }

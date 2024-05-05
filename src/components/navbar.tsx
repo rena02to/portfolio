@@ -5,7 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaRegAddressCard } from 'react-icons/fa6';
 import { HiOutlineExternalLink, HiOutlineMenuAlt2 } from 'react-icons/hi';
-import { IoArrowDown, IoCloseOutline, IoHomeOutline, IoSettingsOutline } from 'react-icons/io5';
+import { IoArrowDown, IoHomeOutline, IoSettingsOutline } from 'react-icons/io5';
 import { MdOutlineSpaceDashboard } from 'react-icons/md';
 import { PiLinkedinLogo } from 'react-icons/pi';
 import { RiContactsBook3Line } from 'react-icons/ri';

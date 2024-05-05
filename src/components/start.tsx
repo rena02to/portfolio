@@ -9,7 +9,7 @@ export default function Start(){
     const cards = [
         { key: 4, value: 'Next.js' },
         { key: 5, value: 'UI & UX' },
-        { key: 6, value: 'TypeScript' },
+        { key: 6, value: 'JavaScript' },
         { key: 7, value: 'Sass' },
     ];
 

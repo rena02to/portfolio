@@ -6,7 +6,10 @@ $cookies-container: rgb(205, 209, 222);
 $navbar-color: rgb(13, 50, 77);
 $navbar-button-hover: rgba(black, 0.15);
 $navbar-button-activated: rgb(255, 115, 18);
-$profile-background: rgb(240, 240, 240);
+$profile-background: rgb(230, 230, 230);
+$yellow-color: rgb(255, 215, 0);
+$green-color: rgb(0, 150, 0);
+$blue-color: rgb(50, 100, 255);
 
 @mixin align-flex($direction){
     display: flex;
