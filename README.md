@@ -8,7 +8,6 @@
     <img src="https://skillicons.dev/icons?i=html" title="HTML" />
     <img src="https://skillicons.dev/icons?i=sass" title="SASS" />
     <img src="https://skillicons.dev/icons?i=ts" title="TypeScript" />
-    <img src="https://skillicons.dev/icons?i=figma" title="Figma" />
   </div>
   <hr/>
 
