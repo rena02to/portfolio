@@ -2,11 +2,11 @@
     "translation": {
         "cookies":{
             "message": {
-                "p1": "Este sitio utiliza cookies para garantizar que usted reciba una",
+                "p1": "Este sitio web utiliza cookies esenciales para garantizar que obtenga la ",
                 "span1": "mejor experiencia",
                 "p2": ". Al hacer clic en ",
                 "span2": "Aceptar",
-                "p3": " aceptas nuestra ",
+                "p3": " aceptas el uso de cookies opcionales, disponibles en nuestra ",
                 "link": "Política de Cookies"
             },
             "acept": "Aceptar",

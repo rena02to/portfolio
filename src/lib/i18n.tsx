@@ -10,5 +10,5 @@ i18n.use(initReactI18next).init({
         en: { ...enTranslation },
         es: { ...esTranslation }
     },
-    lng: 'pt',
+    lng: 'en',
 });
