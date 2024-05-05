@@ -65,6 +65,14 @@
                     }
                 }
             }
+        },
+        "projects": {
+            "code": "Code",
+            "project": "Project",
+            "1": {
+                "desc": "This portfolio project was designed as a platform to showcase and highlight my skills and experiences, as well as showcase my projects. With a minimalist approach and focus on usability, the design is clean and intuitive, allowing visitors to navigate easily through the sections and obtain relevant information in a clear and organized way.",
+                "status": "In development"
+            }
         }
     }
 }
