@@ -31,7 +31,7 @@ export default function Projects(){
             ],
             github: 'https://github.com/rena02to/portfolio',
             link: 'https://renatoalves.site',
-            image: <Image className={style.image} src='' alt="Project image" width={250} height={300}/>,
+            image: <Image src='/images/portfolio.svg' className={style.image} alt="Project image" width={350} height={250}/>,
             status: <p className={style.development}>{t('projects.1.status')}</p>,
             favorite: true
         }
