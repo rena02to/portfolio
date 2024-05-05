@@ -2,11 +2,11 @@
     "translation": {
         "cookies":{
             "message": {
-                "p1": "This site uses cookies to ensure you receive one ",
+                "p1": "This website uses essential cookies to ensure you get the ",
                 "span1": "best experience",
                 "p2": ". By clicking ",
                 "span2": "Accept",
-                "p3": " you agree to our",
+                "p3": " you agree to the use of optional cookies, available in our ",
                 "link": "Cookies Policy"
             },
             "acept": "Accept",
