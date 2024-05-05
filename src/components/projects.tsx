@@ -9,22 +9,30 @@ export default function Projects(){
     const projects = [
         {
             key: 1,
-            name: <h3>Teste</h3>,
-            desc: <p className={style.desc}>Sou um desenvolvedor front-end apaixonado por tecnologia, design e tudo o que está relacionado ao universo digital. Atualmente, sou bacharelando em Ciência da Computação, e encontro-me aprimorando minhas habilidades em desenvolvimento front-end, estudando mais aprofundadamente os conceitos do design responsivo, UI, UX e SEO. Sou um desenvolvedor front-end apaixonado por tecnologia, design e tudo o que está relacionado ao universo digital. Atualmente, sou bacharelando em Ciência da Computação, e encontro-me aprimorando minhas habilidades em desenvolvimento front-end, estudando mais aprofundadamente os conceitos do design responsivo, UI, UX e SEO.</p>,
+            name: <h3>Portfolio</h3>,
+            desc: <p className={style.desc}>{t('projects.1.desc')}</p>,
             stack: [
                 {
                     key: 1,
-                    name: 'Teste'
+                    name: 'Next.js'
                 },
                 {
                     key: 2,
-                    name: 'teste teste'
+                    name: 'Sass'
                 },
+                {
+                    key: 3,
+                    name: 'TypeScript'
+                },
+                {
+                    key: 4,
+                    name: 'HTML'
+                }
             ],
-            github: 'https://github.com/rena02to',
+            github: 'https://github.com/rena02to/portfolio',
             link: 'https://renatoalves.site',
-            image: <Image className={style.image} src='/images/foto.jpg' alt="Project image" width={250} height={300}/>,
-            status: <p className={style.development}>Em desenvolvimento</p>,
+            image: <Image className={style.image} src='' alt="Project image" width={250} height={300}/>,
+            status: <p className={style.development}>{t('projects.1.status')}</p>,
             favorite: true
         }
     ]
@@ -44,8 +52,8 @@ export default function Projects(){
                                 ))}
                             </ul>
                             <div className={style.links}>
-                                <a href={project.link}><FaLink className={style.icon}/>Site<HiOutlineExternalLink className={style.external}/></a>
-                                <a href={project.github}><FaGithub className={style.icon}/>Código<HiOutlineExternalLink className={style.external}/></a>
+                                <a href={project.link} target='_blank'><FaLink className={style.icon}/>{t('projects.project')}<HiOutlineExternalLink className={style.external}/></a>
+                                <a href={project.github} target='_blank'><FaGithub className={style.icon}/>{t('projects.code')}<HiOutlineExternalLink className={style.external}/></a>
                             </div>
                         </div>
                         {project.favorite ? <FaStar className={style.favorite}/> : null}
