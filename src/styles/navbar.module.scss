@@ -155,7 +155,7 @@
     background-color: $navbar-color;
     @include align-flex(row);
     justify-content: space-between;
-    padding: 10px 25px;
+    padding: 10px;
     z-index: 1;
     button{
         padding: 0;
@@ -163,6 +163,7 @@
         p{
             margin: 0;
             font-size: 15px;
+            font-weight: 400;
         }
         svg{
             width: 20px;
@@ -188,6 +189,8 @@
         }
         p{
             font-size: 15px;
+            font-weight: 400;
+            font-family: $main-font;
         }
         svg{
             width: 20px;
