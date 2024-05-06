@@ -15,6 +15,7 @@ import { SlSocialGithub } from 'react-icons/sl';
 export default function Navbar(){
     const { t } = useTranslation();
     const [ menuOpen, setMenuOpen ] = useState(false);
+    const [ menuCompress, setMenuCompress ] = useState(false);
     const [ topHabilited, setTopHabilited ] = useState(false);
     const [ activated, setActiveted ] = useState('start');
     const menuRef = useRef<HTMLDivElement>(null);
@@ -26,6 +27,19 @@ export default function Navbar(){
     ];
 
     useEffect(() => {
+        const updateWindowSize = () => {
+            if(window.innerWidth >= 600){
+                setMenuCompress(false);
+            }else{
+                setMenuCompress(true);
+            }
+        };
+      
+        if (typeof window !== "undefined") {
+            window.addEventListener("resize", updateWindowSize);
+        }
+
+
         function handleScroll() {
             const sections = document.querySelectorAll('section');
 
@@ -54,6 +68,7 @@ export default function Navbar(){
         return () => {
             window.removeEventListener('scroll', handleScroll);
             document.removeEventListener('click', handleClickOutside);
+            window.removeEventListener("resize", updateWindowSize);
         };
     }, [ setActiveted, menuOpen ]);
 
@@ -68,53 +83,68 @@ export default function Navbar(){
 
     return(
         <>
-            <header className={style.nav} ref={menuRef}>
-                <button type='button' title='Menu' className={style.menu} onClick={() => setMenuOpen(!menuOpen)}>
-                    <HiOutlineMenuAlt2/>
-                </button>
-                {menuOpen ?
-                    <div className={style.profile}>
-                        <Image src='/images/foto.jpg' width={75} height={75} alt='Renato Alves photo'/>
-                        <div className={style.namedev}>
-                            <p className={style.name}>Renato Alves</p>
-                            <p className={style.dev}>{t('navbar.dev')}</p>
-                        </div>
-                    </div>
-                    : null
-                }
-                {menulinks.map((menulink) => (
-                    <button title={menulink.value} className={activated === menulink.link ? style.menulinkactivated : style.menulink} key={menulink.key} onClick={() => handleClickButton(menulink.link)}>
-                        {menulink.icon}
-                        {menuOpen ? <p>{menulink.value}</p> : null}
-                    </button>
-                ))}
-                {menuOpen ?
-                    <>
-                        <a className={style.link} href='https://linkedin.com/in/renatosalves/' target="_blank">
-                            <PiLinkedinLogo/>
-                            <p>Linkedin</p>
-                            <HiOutlineExternalLink className={style.arrow}/>
-                        </a>
-                        <a className={style.link} href='https://github.com/rena02to/' target="_blank">
-                            <SlSocialGithub/>
-                            <p>Github</p>
-                            <HiOutlineExternalLink className={style.arrow}/>
-                        </a>
-                    </>
-                    : null
-                }
-                <Link href='/configuracoes' className={style.settings} title={t('navbar.settings')} onClick={() => setMenuOpen(false)}>
-                    <IoSettingsOutline/>
-                    {menuOpen ? <p>{t('navbar.settings')}</p> : null}
-                </Link>
-            </header>
-            {topHabilited ? 
-                <button type='button' className={style.top} onClick={() => handleClickButton('start')}>
-                    <IoArrowDown/>
-                </button>
-                : null
+            {menuCompress ?
+                <>
+                    <nav className={style.navcompress}>
+                        {menulinks.map((menulink) => (
+                            <button title={menulink.value} className={activated === menulink.link ? style.menulinkactivated : style.menulink} key={menulink.key} onClick={() => handleClickButton(menulink.link)}>
+                                {menulink.icon}
+                                <p>{menulink.value}</p>
+                            </button>
+                        ))}
+                    </nav>
+                </>
+                :
+                <>
+                    <header className={style.nav} ref={menuRef}>
+                        <button type='button' title='Menu' className={style.menu} onClick={() => setMenuOpen(!menuOpen)}>
+                            <HiOutlineMenuAlt2/>
+                        </button>
+                        {menuOpen ?
+                            <div className={style.profile}>
+                                <Image src='/images/foto.jpg' width={75} height={75} alt='Renato Alves photo'/>
+                                <div className={style.namedev}>
+                                    <p className={style.name}>Renato Alves</p>
+                                    <p className={style.dev}>{t('navbar.dev')}</p>
+                                </div>
+                            </div>
+                            : null
+                        }
+                        {menulinks.map((menulink) => (
+                            <button title={menulink.value} className={activated === menulink.link ? style.menulinkactivated : style.menulink} key={menulink.key} onClick={() => handleClickButton(menulink.link)}>
+                                {menulink.icon}
+                                {menuOpen ? <p>{menulink.value}</p> : null}
+                            </button>
+                        ))}
+                        {menuOpen ?
+                            <>
+                                <a className={style.link} href='https://linkedin.com/in/renatosalves/' target="_blank">
+                                    <PiLinkedinLogo/>
+                                    <p>Linkedin</p>
+                                    <HiOutlineExternalLink className={style.arrow}/>
+                                </a>
+                                <a className={style.link} href='https://github.com/rena02to/' target="_blank">
+                                    <SlSocialGithub/>
+                                    <p>Github</p>
+                                    <HiOutlineExternalLink className={style.arrow}/>
+                                </a>
+                            </>
+                            : null
+                        }
+                        <Link href='/configuracoes' className={style.settings} title={t('navbar.settings')} onClick={() => setMenuOpen(false)}>
+                            <IoSettingsOutline/>
+                            {menuOpen ? <p>{t('navbar.settings')}</p> : null}
+                        </Link>
+                    </header>
+                    {topHabilited ? 
+                        <button type='button' className={style.top} onClick={() => handleClickButton('start')}>
+                            <IoArrowDown/>
+                        </button>
+                        : null
+                    }
+                    {menuOpen ? <div className={style.background}/> : null}
+                </>
             }
-            {menuOpen ? <div className={style.background}/> : null}
         </>
     )
 }

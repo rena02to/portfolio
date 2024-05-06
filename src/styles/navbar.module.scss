@@ -21,9 +21,6 @@
         font-weight: 400;
         font-family: $main-font;
         color: rgb(230, 230, 230);
-        @media (max-width: 600px){
-            font-size: 14px;
-        }
     }
     a{
         text-decoration: none;
@@ -46,10 +43,6 @@
         margin-right: -2px;
         img{
             border-radius: 100px;
-            @media (max-width: 600px){
-                width: 50px;
-                height: 50px;
-            }
         }
         .namedev{
             @include align-flex(column);
@@ -60,9 +53,6 @@
             font-weight: 500;
             font-size: 30px;
             font-family: $name-font;
-            @media (max-width: 600px){
-                font-size: 25px;
-            }
         }
         .dev{
             font-size: 20px;
@@ -155,4 +145,38 @@
     top: 0;
     left: 0;
     z-index: 2;
+}
+
+.navcompress{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: calc(100% - 50px);
+    background-color: $navbar-color;
+    @include align-flex(row);
+    justify-content: space-between;
+    padding: 10px 25px;
+    z-index: 1;
+    button{
+        padding: 0;
+        background-color: transparent;
+        p{
+            margin: 0;
+            font-size: 15px;
+        }
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .menulink{
+        p, svg{
+            color: white;
+        }
+    }
+    .menulinkactivated{
+        p, svg{
+            color: $navbar-button-activated;
+        }
+    }
 }

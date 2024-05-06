@@ -1,7 +1,7 @@
 @import './main.scss';
 
 .projects{
-    padding: 25px 0 50px 70px; //remover o padding bottom
+    padding: 25px 0 25px 70px; //remover o padding bottom
     @include align-flex(column);
     h2{
         font-size: 35px;
