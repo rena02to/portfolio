@@ -32,6 +32,7 @@ export default function Summary(){
 
     return(
         <section className={style.summary} id='summary'>
+            <h2>{t('navbar.menu.summary')}</h2>
             <div className={style.profile}>
                 <div className={style.image}/>
                 <div className={style.infos}>
@@ -39,7 +40,7 @@ export default function Summary(){
                     <h1 className={style.name}>Renato Alves</h1>
                     <h1 className={style.dev}>{t('summary.dev')}</h1>
                     <div className={style.about}>
-                        <h2>{t('summary.about.title')}</h2>
+                        <h3>{t('summary.about.title')}</h3>
                         <div className={style.text}>
                             <p>{t('summary.about.text1')}</p>
                             <p>{t('summary.about.text2')}</p>
@@ -48,7 +49,7 @@ export default function Summary(){
                         </div>
                     </div>
                     <div className={style.skills}>
-                        <h2>{t('summary.skills.title')}</h2>
+                        <h3>{t('summary.skills.title')}</h3>
                         <ul>
                             {skills.map((skill) => (
                                 <li key={skill.key}>{skill.icon}{skill.value}</li>
@@ -56,7 +57,7 @@ export default function Summary(){
                         </ul>
                         {desc.map((describe) => (
                             <div className={style.desc} key={describe.key}>
-                                <h3>{describe.title}</h3>
+                                <h4>{describe.title}</h4>
                                 <p>{describe.value}</p>
                             </div>
                         ))}

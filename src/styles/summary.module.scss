@@ -3,6 +3,13 @@
 .summary{
     padding-left: 70px;
     @include align-flex(column);
+    h2{
+        font-weight: 500;
+        font-size: 35px;
+        @media (max-width: 600px){
+            font-size: 30px;
+        }
+    }
     .profile{
         background-color: $profile-background;
         width: 95%;
@@ -56,7 +63,7 @@
                 padding: 20px;
                 border-radius: 5px;
                 border: 1px solid gray;
-                h2{
+                h3{
                     margin: 0;
                     font-weight: 500;
                     font-size: 25px;
@@ -87,7 +94,7 @@
                 gap: 30px;
                 padding: 20px 20px 40px 20px;
                 margin-top: 25px;
-                h2{
+                h3{
                     margin: 0;
                     font-weight: 500;
                     font-size: 25px;
@@ -132,7 +139,7 @@
                     @include align-flex(column);
                     gap: 5px;
                     align-items: flex-start;
-                    h3{
+                    h4{
                         font-weight: 500;
                         font-size: 20px;
                         margin: 0;
