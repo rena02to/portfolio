@@ -6,6 +6,9 @@
     height: calc(100vh - 35px);
     @include align-flex(column);
     gap: 30px;
+    @media (max-width: 700px){
+        padding-left: 0;
+    }
     .name{
         position: absolute;
         top: 15px;
@@ -22,6 +25,9 @@
         }
         @media (max-width: 800px){
             font-size: 30px;
+        }
+        @media (max-width: 700px){
+            left: 15px;
         }
         @media (max-width: 500px){
             font-size: 25px;

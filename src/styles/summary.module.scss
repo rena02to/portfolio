@@ -3,6 +3,9 @@
 .summary{
     padding-left: 70px;
     @include align-flex(column);
+    @media (max-width: 700px){
+        padding-left: 0;
+    }
     h2{
         font-weight: 500;
         font-size: 35px;

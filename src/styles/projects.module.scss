@@ -1,7 +1,10 @@
 @import './main.scss';
 
 .projects{
-    padding: 25px 0 25px 70px; //remover o padding bottom
+    padding: 25px 0 25px 70px;
+    @media (max-width: 700px){
+        padding-left: 0;
+    }
     @include align-flex(column);
     h2{
         font-size: 35px;
