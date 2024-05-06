@@ -151,7 +151,7 @@
     position: fixed;
     bottom: 0;
     left: 0;
-    width: calc(100% - 50px);
+    width: calc(100% - 20px);
     background-color: $navbar-color;
     @include align-flex(row);
     justify-content: space-between;
@@ -164,10 +164,17 @@
             margin: 0;
             font-size: 15px;
             font-weight: 400;
+            @media (max-width: 400px){
+                font-size: 12px;
+            }
         }
         svg{
             width: 20px;
             height: 20px;
+            @media (max-width: 400px){
+                width: 15px;
+                height: 15px;
+            }
         }
     }
     .menulink{
@@ -191,10 +198,17 @@
             font-size: 15px;
             font-weight: 400;
             font-family: $main-font;
+            @media (max-width: 400px){
+                font-size: 12px;
+            }
         }
         svg{
             width: 20px;
             height: 20px;
+            @media (max-width: 400px){
+                width: 15px;
+                height: 15px;
+            }
         }
     }
 }

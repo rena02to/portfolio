@@ -28,7 +28,7 @@ export default function Navbar(){
 
     useEffect(() => {
         const updateWindowSize = () => {
-            if(window.innerWidth >= 600){
+            if(window.innerWidth >= 700){
                 setMenuCompress(false);
             }else{
                 setMenuCompress(true);
