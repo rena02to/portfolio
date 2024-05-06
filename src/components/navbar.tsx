@@ -83,7 +83,7 @@ export default function Navbar(){
 
     return(
         <>
-            {!menuCompress ?
+            {menuCompress ?
                 <>
                     <nav className={style.navcompress}>
                         {menulinks.map((menulink) => (
