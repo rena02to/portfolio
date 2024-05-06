@@ -39,6 +39,7 @@ export default function Projects(){
 
     return(
         <section id="projects" className={style.projects}>
+            <h2>{t('navbar.menu.projects')}</h2>
             <div className={style.projectscontainer}>
                 {projects.map((project) => (
                     <div className={style.cardproject} key={project.key}>
