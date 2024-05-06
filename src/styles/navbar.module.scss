@@ -179,4 +179,19 @@
             color: $navbar-button-activated;
         }
     }
+    a{
+        text-decoration: none;
+        @include align-flex(column);
+        p, svg{
+            margin: 0;
+            color: white;
+        }
+        p{
+            font-size: 15px;
+        }
+        svg{
+            width: 20px;
+            height: 20px;
+        }
+    }
 }

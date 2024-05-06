@@ -83,7 +83,7 @@ export default function Navbar(){
 
     return(
         <>
-            {menuCompress ?
+            {!menuCompress ?
                 <>
                     <nav className={style.navcompress}>
                         {menulinks.map((menulink) => (
@@ -92,6 +92,10 @@ export default function Navbar(){
                                 <p>{menulink.value}</p>
                             </button>
                         ))}
+                        <Link href='/configuracoes' className={style.settings} title={t('navbar.settings')} onClick={() => setMenuOpen(false)}>
+                            <IoSettingsOutline/>
+                            <p>{t('navbar.settings')}</p>
+                        </Link>
                     </nav>
                 </>
                 :
