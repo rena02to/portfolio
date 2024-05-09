@@ -9,7 +9,6 @@ Este projeto de portfólio foi concebido como uma plataforma para exibir e desta
 Você pode visitar o projeto [clicando aqui](https://renatoalves.site), ou clicando na imagem abaixo.
 
 [![Imagem do projeto](public/images/portfolio.svg)](https://renatoalves.site)
-<p>© 2024 Renato Alves | Desenvolvedor Front end</p>
 
 ## Stack utilizada
 
@@ -19,14 +18,12 @@ Você pode visitar o projeto [clicando aqui](https://renatoalves.site), ou clica
 ![TypeScript](https://skillicons.dev/icons?i=ts "TypeScript")
 
 
-## Autores
-
-- [@renatoalves](https://github.com/rena02to)
-
-
 ## Referências
 
  - [Imagem de fundo da seção de resumo](https://br.freepik.com/vetores-gratis/fundo-digital-de-codigo-binario-de-estilo-de-matriz-com-numeros-caindo_8289995.htm#&position=1&from_view=user&uuid=c1bf85f7-b02f-4b7b-aee8-e671caa8e387)
 
-  
+ ##
+ © 2024 Renato Alves | Desenvolvedor Front end
+ 
+ [![linkedin](https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/renatosalves)
 </div>
