@@ -6,7 +6,9 @@
 
 Este projeto de portfólio foi concebido como uma plataforma para exibir e destacar minhas habilidades e experiências, além de mostrar meus projetos. Com uma abordagem minimalista e foco na usabilidade, o design é clean e intuitivo, permitindo que os visitantes naveguem facilmente pelas seções e obtenham informações relevantes de forma clara e organizada.
 
-<img src='public/images/portfolio.svg' width='500' heigth='400'/>
+Você pode visitar o projeto [clicando aqui](https://renatoalves.site), ou clicando na imagem abaixo.
+
+[![Imagem do projeto](public/images/portfolio.svg)](https://renatoalves.site)
 <p>© 2024 Renato Alves | Desenvolvedor Front end</p>
 
 ## Stack utilizada
