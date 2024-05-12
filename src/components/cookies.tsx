@@ -33,7 +33,7 @@ export default function Cookies(){
                     <button type='button' className={style.close} onClick={() => handleAceptCookies('close')}><IoCloseOutline /></button>
                     <div className={style.cookiestitle}>
                         <LiaCookieBiteSolid/>
-                        <p>Uso de cookies</p>
+                        <p>{t('cookies.title')}</p>
                         <LiaCookieBiteSolid/>
                     </div>
                     <p className={style.cookiesmessage}>{t('cookies.message.p1')}<span>{t('cookies.message.span1')}</span>{t('cookies.message.p2')}<span>&quot;{t('cookies.message.span2')}&quot;</span>{t('cookies.message.p3')}<Link href="/politica-cookies">{t('cookies.message.link')}</Link>.</p>
