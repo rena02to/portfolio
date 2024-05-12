@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { IoCloseOutline } from "react-icons/io5";
+import { LiaCookieBiteSolid } from 'react-icons/lia';
 
 export default function Cookies(){
     const { t } = useTranslation();
@@ -30,7 +31,12 @@ export default function Cookies(){
             {cookiesOculted === false ?
                 <aside className={style.cookiesDiv}>
                     <button type='button' className={style.close} onClick={() => handleAceptCookies('close')}><IoCloseOutline /></button>
-                    <p>{t('cookies.message.p1')}<span>{t('cookies.message.span1')}</span>{t('cookies.message.p2')}<span>&quot;{t('cookies.message.span2')}&quot;</span>{t('cookies.message.p3')}<Link href="/politica-cookies">{t('cookies.message.link')}</Link>.</p>
+                    <div className={style.cookiestitle}>
+                        <LiaCookieBiteSolid/>
+                        <p>Uso de cookies</p>
+                        <LiaCookieBiteSolid/>
+                    </div>
+                    <p className={style.cookiesmessage}>{t('cookies.message.p1')}<span>{t('cookies.message.span1')}</span>{t('cookies.message.p2')}<span>&quot;{t('cookies.message.span2')}&quot;</span>{t('cookies.message.p3')}<Link href="/politica-cookies">{t('cookies.message.link')}</Link>.</p>
                     <div className={style.buttons}>
                         <button type='button' className={style.acept} onClick={() => handleAceptCookies('acept')}>{t('cookies.acept')}</button>
                         <button type='button' className={style.denied} onClick={() => handleAceptCookies('denied')}>{t('cookies.denied')}</button>
