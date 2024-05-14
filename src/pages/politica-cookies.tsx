@@ -1,10 +1,13 @@
 import style from '@/styles/policy.module.scss';
 import Image from 'next/image';
+import Link from 'next/link';
 import { LiaCookieBiteSolid } from 'react-icons/lia';
+import { TbArrowBackUpDouble } from 'react-icons/tb';
 
 export default function Policy(){
     return(
         <div className={style.cookiespolicy}>
+            <Link href='/'><TbArrowBackUpDouble/><p>Voltar para o portfolio</p></Link>
             <Image src='/images/cookies.png' alt='Imagem de cookies' width={100} height={100}/>
             <div className={style.intern}>
                 <p>Bem-vindo à nossa política de cookies! Aqui, queremos informá-lo sobre como usamos cookies em nosso site para melhorar sua experiência de navegação.</p>

@@ -2,8 +2,47 @@
 
 .cookiespolicy{
     @include align-flex(column);
-    padding: 25px 0;
+    padding: 75px 0;
     gap: 25px;
+    a{
+        @include align-flex(row);
+        color: black;
+        border-radius: 10px;
+        padding: 5px 10px;
+        background-color: transparent;
+        position: absolute;
+        border: 1px solid gray;
+        top: 10px;
+        left: 10px;
+        text-decoration: none;
+        font-family: $main-font;
+        svg{
+            width: 25px;
+            height: 25px;
+        }
+        p{
+            font-size: 17px;
+            font-weight: 500;
+            margin: 0;
+            &::before{
+                content: '';
+                border: 1px solid gray;
+                margin: 0 5px 0 1px;
+            }
+            @media (max-width: 600px){
+                font-size: 15px;
+            }
+        }
+        &:hover{
+            background-color: rgb(75, 75, 75);
+            border: 2px solid rgb(75, 75, 75);
+            box-shadow: 5px 5px 5px rgba(black, 0.5);
+            p, svg{
+                color: white;
+                text-shadow: 5px 5px 5px black;
+            }
+        }
+    }
     .intern{
         width: max-content;
         text-align: center;
