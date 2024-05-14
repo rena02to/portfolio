@@ -74,6 +74,16 @@
                 "desc": "This portfolio project was designed as a platform to showcase and highlight my skills and experiences, as well as showcase my projects. With a minimalist approach and focus on usability, the design is clean and intuitive, allowing visitors to navigate easily through the sections and obtain relevant information in a clear and organized way.",
                 "status": "In development"
             }
+        },
+        "policy": {
+            "link": "Back to portfolio",
+            "welcome": "Welcome to our cookie policy! Here we want to inform you about how we use cookies on our website to improve your browsing experience.",
+            "what": "What are cookies?",
+            "responsewhat": "Cookies are small text files stored in your browser when you visit our website, and they are intended to improve your browsing experience.",
+            "essentials": "Essential cookies",
+            "responseessentials": "Essential cookies are essential for our website to function. They are only used to remember whether you have accepted or denied the use of optional cookies. These cookies do not collect personal information and cannot be disabled.",
+            "optionals": "Optional cookies",
+            "responseoptionals": "Optional cookies help us improve your website experience by remembering your preferences, such as your chosen language. They are not essential, but they allow us to personalize content to suit your preferences. You can choose to allow or refuse these cookies."
         }
     }
 }
