@@ -74,6 +74,16 @@
                 "desc": "Este projeto de portfólio foi concebido como uma plataforma para exibir e destacar minhas habilidades e experiências, além de mostrar meus projetos. Com uma abordagem minimalista e foco na usabilidade, o design é clean e intuitivo, permitindo que os visitantes naveguem facilmente pelas seções e obtenham informações relevantes de forma clara e organizada.",
                 "status": "Em desenvolvimento"
             }
+        },
+        "policy": {
+            "link": "Voltar para o portfolio",
+            "welcome": "Bem-vindo à nossa política de cookies! Aqui, queremos informá-lo sobre como usamos cookies em nosso site para melhorar sua experiência de navegação.",
+            "what": "O que são cookies?",
+            "responsewhat": "Cookies são pequenos arquivos de texto armazenados no seu navegador quando você visita nosso site, e eles têm como objetivo melhorar sua experiência de navegação.",
+            "essentials": "Cookies essenciais",
+            "responseessentials": "Os cookies essenciais são fundamentais para o funcionamento do nosso site. Eles são utilizados apenas para lembrar se você aceitou ou negou o uso dos cookies opcionais. Esses cookies não coletam informações pessoais e não podem ser desativados.",
+            "optionals": "Cookies opcionais",
+            "responseoptionals": "Os cookies opcionais nos ajudam a melhorar sua experiência no site ao lembrar suas preferências, como o idioma escolhido. Eles não são essenciais, mas permitem personalizar o conteúdo para atender às suas preferências. Você pode escolher permitir ou recusar esses cookies."
         }
     }
 }
