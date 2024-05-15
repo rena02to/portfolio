@@ -1,11 +1,10 @@
 import style from '@/styles/navbar.module.scss';
 import Image from 'next/image';
-import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { FaRegAddressCard } from 'react-icons/fa6';
 import { HiOutlineExternalLink, HiOutlineMenuAlt2 } from 'react-icons/hi';
-import { IoArrowDown, IoHomeOutline, IoSettingsOutline } from 'react-icons/io5';
+import { IoArrowDown, IoHomeOutline } from 'react-icons/io5';
 import { MdOutlineSpaceDashboard } from 'react-icons/md';
 import { PiLinkedinLogo } from 'react-icons/pi';
 import { RiContactsBook3Line } from 'react-icons/ri';
@@ -95,10 +94,6 @@ export default function Navbar(){
                             <p>{menulink.value}</p>
                         </button>
                     ))}
-                    <Link href='/configuracoes' className={style.settings} title={t('navbar.settings')} onClick={() => setMenuOpen(false)}>
-                        <IoSettingsOutline/>
-                        <p>{t('navbar.settings')}</p>
-                    </Link>
                 </nav>
                 :
                 <header className={style.nav} ref={menuRef}>
@@ -136,10 +131,6 @@ export default function Navbar(){
                         </>
                         : null
                     }
-                    <Link href='/configuracoes' className={style.settings} title={t('navbar.settings')} onClick={() => setMenuOpen(false)}>
-                        <IoSettingsOutline/>
-                        {menuOpen ? <p>{t('navbar.settings')}</p> : null}
-                    </Link>
                 </header>
             }
             {topHabilited ? 

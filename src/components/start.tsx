@@ -6,28 +6,10 @@ import { HiOutlineDocumentText, HiOutlineExternalLink } from 'react-icons/hi';
 
 export default function Start(){
     const { t } = useTranslation();
-    const cards = [
-        { key: 4, value: 'Next.js' },
-        { key: 5, value: 'UI & UX' },
-        { key: 6, value: 'JavaScript' },
-        { key: 7, value: 'Sass' },
-    ];
 
     return(
         <section className={style.home} id='start'>
             <h1 className={style.name}>Renato Alves</h1>
-            <div className={style.textslider}>
-                <ul>
-                    {cards.map((card) => (
-                        <li key={card.key}>{card.value}</li>
-                    ))}
-                </ul>
-                <ul>
-                    {cards.map((card) => (
-                        <li key={card.key}>{card.value}</li>
-                    ))}
-                </ul>
-            </div>
             <div className={style.text}>
                 <h2 className={style.portfolio}>PORTFOLIO</h2>
                 <h1>{t('start.dev.1')}<br/>{t('start.dev.2')}</h1>

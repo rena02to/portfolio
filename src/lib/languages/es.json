@@ -84,9 +84,6 @@
             "responseessentials": "Las cookies esenciales son esenciales para que nuestro sitio web funcione. Sólo se utilizan para recordar si ha aceptado o rechazado el uso de cookies opcionales. Estas cookies no recopilan información personal y no se pueden desactivar.",
             "optionals": "Cookies opcionales",
             "responseoptionals": "Las cookies opcionales nos ayudan a mejorar su experiencia en el sitio web al recordar sus preferencias, como el idioma elegido. No son esenciales, pero nos permiten personalizar el contenido para adaptarlo a sus preferencias. Puede optar por permitir o rechazar estas cookies."
-        },
-        "settings": {
-            "title": "Ajustes"
         }
     }
 }

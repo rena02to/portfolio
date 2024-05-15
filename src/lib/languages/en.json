@@ -84,9 +84,6 @@
             "responseessentials": "Essential cookies are essential for our website to function. They are only used to remember whether you have accepted or denied the use of optional cookies. These cookies do not collect personal information and cannot be disabled.",
             "optionals": "Optional cookies",
             "responseoptionals": "Optional cookies help us improve your website experience by remembering your preferences, such as your chosen language. They are not essential, but they allow us to personalize content to suit your preferences. You can choose to allow or refuse these cookies."
-        },
-        "settings": {
-            "title": "Settings"
         }
     }
 }

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import style from '@/styles/404.module.scss';
 import Link from "next/link";
-import { GoArrowUpLeft } from "react-icons/go";
+import { TbArrowBackUpDouble } from "react-icons/tb";
 
 export default function NotFound(){
     return(
@@ -13,7 +13,7 @@ export default function NotFound(){
             <p className={style.click}>Clique no botão abaixo para ser redirecionado para meu portfolio:</p>
             <Link href='/'>
                 <button type='button'>
-                    <GoArrowUpLeft/>
+                    <TbArrowBackUpDouble/>
                     <p>Conhecer portfolio</p>
                 </button>
             </Link>
