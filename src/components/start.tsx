@@ -10,9 +10,9 @@ import cookies from 'js-cookie';
 export default function Start(){
     const { t, i18n } = useTranslation();
     const languages = [
-        { value: 'pt', label: 'Português' },
-        { value: 'en', label: 'Inglês' },
-        { value: 'es', label: 'Espanhol' }
+        { value: 'pt', label: t('start.pt') },
+        { value: 'en', label: t('start.en') },
+        { value: 'es', label: t('start.es') }
     ];
     const [language, setLanguage] = useState('pt');
 
@@ -40,7 +40,7 @@ export default function Start(){
         <section className={style.home} id='start'>
             <h1 className={style.name}>Renato Alves</h1>
             <div className={style.languages}>
-                <label htmlFor="languages">{t('summary.language')}</label>
+                <label htmlFor="languages">{t('start.language')}</label>
                 <Select className={style.select} id='languages' name="languages" options={languages} isClearable={false} isSearchable={false} value={language === 'pt' ? languages[0] : (language === 'en' ? languages[1] : languages[2])} onChange={handleChange}/>
             </div>
             <div className={style.text}>

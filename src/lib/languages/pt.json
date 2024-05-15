@@ -33,7 +33,11 @@
             "seo": "SEO",
             "responsive": "Responsividade",
             "innovation": "Inovação",
-            "phrase": "Transformando ideias em experiências digitais memoráveis..."
+            "phrase": "Transformando ideias em experiências digitais memoráveis...",
+            "language": "Idioma",
+            "pt": "Português",
+            "en": "Inglês",
+            "es": "Espanhol"
         },
         "summary": {
             "about": {
@@ -65,8 +69,7 @@
                         "desc": "Com experiência em design responsivo, tenho habilidades sólidas em criar interfaces que se adaptam perfeitamente a diferentes dispositivos e tamanhos de tela. Utilizando técnicas avançadas de HTML, CSS, Sass e o framework Next, posso garantir que cada projeto tenha uma aparência impecável em qualquer dispositivo, proporcionando uma experiência consistente e intuitiva para os usuários, independentemente do dispositivo que estão utilizando."
                     }
                 }
-            },
-            "language": "Idioma"
+            }
         },
         "projects": {
             "code": "Código",
