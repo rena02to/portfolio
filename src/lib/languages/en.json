@@ -65,7 +65,8 @@
                         "desc": "With experience in responsive design, I have solid skills in creating interfaces that adapt perfectly to different devices and screen sizes. Using advanced techniques in HTML, CSS, Sass and the Next framework, I can ensure that each project looks flawless on any device, providing a consistent and intuitive experience for users, regardless of the device they are using."
                     }
                 }
-            }
+            },
+            "language": "Language"
         },
         "projects": {
             "code": "Code",

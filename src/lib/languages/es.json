@@ -65,7 +65,8 @@
                         "desc": "Con experiencia en diseño responsivo, tengo sólidas habilidades en la creación de interfaces que se adaptan perfectamente a diferentes dispositivos y tamaños de pantalla. Usando técnicas avanzadas en HTML, CSS, Sass y el framework Next, puedo asegurar que cada proyecto se vea impecable en cualquier dispositivo, brindando una experiencia consistente e intuitiva para los usuarios, independientemente del dispositivo que estén usando."
                     }
                 }
-            }
+            },
+            "language": "Idioma"
         },
         "projects": {
             "code": "Código",

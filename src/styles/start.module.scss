@@ -9,6 +9,19 @@
     @media (max-width: 700px){
         padding-left: 0;
     }
+    .languages{
+        @include align-flex(column);
+        gap: 5px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        label{
+            font-size: 17px;
+        }
+        .select{
+            width: 120px;
+        }
+    }
     .name{
         position: absolute;
         top: 15px;
