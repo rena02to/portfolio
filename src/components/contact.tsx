@@ -14,20 +14,22 @@ export default function Contact(){
             <Formik initialValues={initialValues} onSubmit={handleSubmit}>
                 {({ isSubmitting }) => (
                     <Form>
+                        <h3>Formulário de contato</h3>
+
                         <div className={style.inputbox}>
-                            <label htmlFor="name">Seu nome e sobrenome<span>*</span></label>
+                            <label htmlFor="name">Nome e sobrenome<span>*</span></label>
                             <input type="text" id='name'/>
                             <ErrorMessage name='name'/>
                         </div>
 
                         <div className={style.inputbox}>
-                            <label htmlFor="email">Seu e-mail<span>*</span></label>
+                            <label htmlFor="email">E-mail<span>*</span></label>
                             <input type="email" name="email" id="email"/>
                             <ErrorMessage name='email'/>
                         </div>
 
                         <div className={style.inputbox}>
-                            <label htmlFor="subject">Assunto da mensagem<span>*</span></label>
+                            <label htmlFor="subject">Assunto<span>*</span></label>
                             <input type="text" id='subject'/>
                             <ErrorMessage name='subject'/>
                         </div>

@@ -15,5 +15,59 @@
     }
     form{
         background-color: $profile-background;
+        width: calc(90% - 60px);
+        padding: 30px;
+        max-width: 600px;
+        @include align-flex(column);
+        gap: 15px;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+        border-radius: 15px;
+        h3{
+            font-size: 25px;
+            font-weight: 500;
+            margin: 0 0 15px 0;
+            @media (max-width: 600px){
+                font-size: 20px;
+            }
+        }
+        .inputbox{
+            @include align-flex(column);
+            width: 90%;
+            gap: 5px;
+            align-items: flex-start;
+            label{
+                font-size: 20px;
+                font-weight: 400;
+                span{
+                    color: red;
+                    margin-left: 5px;
+                }
+            }
+            input, textarea{
+                width: 100%;
+                padding: 10px;
+                font-size: 15px;
+                font-family: $main-font;
+                border-radius: 10px;
+                border: 1px solid gray;
+            }
+            textarea{
+                height: 200px;
+                resize: none;
+            }
+            input{}
+        }
+        button{
+            padding: 10px 20px;
+            font-family: $main-font;
+            font-size: 17px;
+            border-radius: 10px;
+            background-color: $blue-color;
+            color: white;
+            width: calc(100% - 40px);
+            &:disabled{
+                background-color: rgb(200, 200, 200);
+            }
+        }
     }
 }
