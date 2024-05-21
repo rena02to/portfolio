@@ -14,7 +14,10 @@ export default function Contact(){
             <Formik initialValues={initialValues} onSubmit={handleSubmit}>
                 {({ isSubmitting }) => (
                     <Form>
-                        <h3>Formulário de contato</h3>
+                        <div className={style.title}>
+                            <h3>Formulário de contato</h3>
+                            <p><span>*</span> Indica um campo de preenchimento obrigatório</p>
+                        </div>
 
                         <div className={style.inputbox}>
                             <label htmlFor="name">Nome e sobrenome<span>*</span></label>
