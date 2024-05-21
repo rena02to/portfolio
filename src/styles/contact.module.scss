@@ -22,9 +22,10 @@
         gap: 15px;
         box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
         border-radius: 15px;
+        text-align: center;
         .title{
             @include align-flex(column);
-            width: calc(90% - 40px);
+            width: calc(98% - 40px);
             gap: 5px;
             align-items: flex-start;
             background-color: rgb(190, 220, 255);
@@ -48,7 +49,7 @@
         }
         .inputbox{
             @include align-flex(column);
-            width: calc(90% - 40px);
+            width: calc(98% - 40px);
             gap: 5px;
             align-items: flex-start;
             background-color: rgb(190, 220, 255);
@@ -72,7 +73,7 @@
                 outline: none;
                 transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
                 &:focus{
-                    border: 2px solid $blue-color;
+                    border: 3px solid $blue-color;
                     box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
                 }
             }
@@ -84,7 +85,7 @@
         }
         .buttons{
             @include align-flex(row);
-            width: 90%;
+            width: 98%;
             justify-content: space-between;
             button{
                 padding: 10px 20px;
