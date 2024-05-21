@@ -76,16 +76,27 @@
             }
             input{}
         }
-        button{
-            padding: 10px 20px;
-            font-family: $main-font;
-            font-size: 17px;
-            border-radius: 10px;
-            background-color: $blue-color;
-            color: white;
+        .buttons{
+            @include align-flex(row);
             width: 90%;
-            &:disabled{
-                background-color: rgb(200, 200, 200);
+            justify-content: space-between;
+            button{
+                padding: 10px 20px;
+                font-family: $main-font;
+                font-size: 17px;
+                border-radius: 10px;
+                color: white;
+                width: 45%;
+                font-weight: 500;
+                &:disabled{
+                    background-color: rgb(200, 200, 200);
+                }
+            }
+            .submit{
+                background-color: $blue-color;
+            }
+            .reset{
+                background-color: rgb(255, 50, 50);
             }
         }
     }

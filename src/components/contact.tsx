@@ -5,6 +5,7 @@ import { useState } from 'react';
 export default function Contact(){
     const initialValues = {};
     const [ isSubmitting, setIsSubmitting ] = useState(false);
+    const [ isClearing, setIsClearing ] = useState(false);
 
     const handleSubmit = () => {}
 
@@ -43,7 +44,10 @@ export default function Contact(){
                             <ErrorMessage name='message'/>
                         </div>
 
-                        <button type="submit" disabled={!isSubmitting}>Enviar</button>
+                        <div className={style.buttons}>
+                            <button type="submit" className={style.submit} disabled={!isSubmitting}>Enviar</button>
+                            <button type="reset" className={style.reset} disabled={!isClearing}>Limpar</button>
+                        </div>
                     </Form>
                 )}
             </Formik>
