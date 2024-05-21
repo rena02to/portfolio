@@ -20,7 +20,14 @@
             font-size: 17px;
         }
         .select{
-            width: 120px;
+            width: 150px;
+            .option{
+                @include align-flex(row);
+                gap: 5px;
+                img{
+                    border-radius: 100px;
+                }
+            }
         }
     }
     .name{

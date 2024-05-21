@@ -6,13 +6,14 @@ import { HiOutlineDocumentText, HiOutlineExternalLink } from 'react-icons/hi';
 import Select from 'react-select';
 import { useEffect, useState } from 'react';
 import cookies from 'js-cookie';
+import Image from 'next/image';
 
 export default function Start(){
     const { t, i18n } = useTranslation();
     const languages = [
-        { value: 'pt', label: t('start.pt') },
-        { value: 'en', label: t('start.en') },
-        { value: 'es', label: t('start.es') }
+        { value: 'pt', label: <div className={style.option}><Image src='/images/br.png' width={20} height={20} alt='Brazil image'/> {t('start.pt')}</div> },
+        { value: 'en', label: <div className={style.option}><Image src='/images/us.png' width={20} height={20} alt='United States image'/> {t('start.en')}</div>},
+        { value: 'es', label: <div className={style.option}><Image src='/images/es.png' width={20} height={20} alt='Spanish image'/> {t('start.es')}</div> }
     ];
     const [language, setLanguage] = useState('pt');
 
