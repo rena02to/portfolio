@@ -1,7 +1,9 @@
 import style from '@/styles/contact.module.scss'; 
 import { ErrorMessage, Form, Formik } from 'formik';
 import { useState } from 'react';
-import { FaUserTie } from 'react-icons/fa6';
+import { FaFileCircleQuestion, FaUserTie } from 'react-icons/fa6';
+import { IoMail } from 'react-icons/io5';
+import { RiQuestionAnswerFill } from 'react-icons/ri';
 
 export default function Contact(){
     const initialValues = {};
@@ -22,26 +24,38 @@ export default function Contact(){
                         </div>
 
                         <div className={style.inputbox}>
-                            <label htmlFor="name">Nome e sobrenome<span>*</span></label>
-                            <input type="text" id='name' placeholder='Digite aqui seu nome e sobrenome'/>
+                            <label htmlFor="name">Nome e sobrenome <span>*</span></label>
+                            <div className={style.input}>
+                                <FaUserTie/>
+                                <input type="text" id='name' placeholder='Digite aqui seu nome e sobrenome'/>
+                            </div>
                             <ErrorMessage name='name'/>
                         </div>
 
                         <div className={style.inputbox}>
                             <label htmlFor="email">E-mail<span>*</span></label>
-                            <input type="email" name="email" id="email" placeholder='Digite aqui seu e-mail'/>
+                            <div className={style.input}>
+                                <IoMail/>
+                                <input type="email" name="email" id="email" placeholder='Digite aqui seu e-mail'/>
+                            </div>
                             <ErrorMessage name='email'/>
                         </div>
 
                         <div className={style.inputbox}>
                             <label htmlFor="subject">Assunto<span>*</span></label>
-                            <input type="text" id='subject' placeholder='Digite aqui o assunto'/>
+                            <div className={style.input}>
+                                <FaFileCircleQuestion/>
+                                <input type="text" id='subject' placeholder='Digite aqui o assunto'/>
+                            </div>
                             <ErrorMessage name='subject'/>
                         </div>
 
                         <div className={style.inputbox}>
                             <label htmlFor="message">Mensagem<span>*</span></label>
-                            <textarea name="message" id="message" placeholder='Digite aqui a mensagem'/>
+                            <div className={style.input}>
+                                <RiQuestionAnswerFill/>
+                                <textarea name="message" id="message" placeholder='Digite aqui a mensagem'/>
+                            </div>
                             <ErrorMessage name='message'/>
                         </div>
 
