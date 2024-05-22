@@ -7,7 +7,7 @@ import { RiQuestionAnswerFill } from 'react-icons/ri';
 
 export default function Contact(){
     const initialValues = {
-        name: 'Ricardo',
+        name: '',
     };
     const [ isSubmitting, setIsSubmitting ] = useState(false);
     const [ isClearing, setIsClearing ] = useState(false);
