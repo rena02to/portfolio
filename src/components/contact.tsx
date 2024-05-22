@@ -1,13 +1,17 @@
 import style from '@/styles/contact.module.scss'; 
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import { useState } from 'react';
+import { BsFillSendFill } from 'react-icons/bs';
 import { FaFileCircleQuestion, FaUserTie } from 'react-icons/fa6';
-import { IoMail } from 'react-icons/io5';
+import { IoClose, IoMail } from 'react-icons/io5';
 import { RiQuestionAnswerFill } from 'react-icons/ri';
 
 export default function Contact(){
     const initialValues = {
         name: '',
+        email: '',
+        subject: '',
+        message: '',
     };
     const [ isSubmitting, setIsSubmitting ] = useState(false);
     const [ isClearing, setIsClearing ] = useState(false);
@@ -18,7 +22,7 @@ export default function Contact(){
         <section className={style.contact} id='contact'>
             <h2>Contate-me</h2>
             <Formik initialValues={initialValues} onSubmit={handleSubmit}>
-                {({ isSubmitting }) => (
+                {({}) => (
                     <Form>
                         <div className={style.title}>
                             <h3>Formulário de contato</h3>

@@ -92,7 +92,7 @@
                     width: 20px;
                     left: 10px;
                     top: 10px;
-                    color: rgb(50, 50, 50);
+                    color: rgb(100, 100, 100);
                 }
             }
         }
@@ -101,6 +101,8 @@
             width: 98%;
             justify-content: space-between;
             button{
+                @include align-flex(row);
+                gap: 5px;
                 padding: 10px 20px;
                 font-family: $main-font;
                 font-size: 17px;
@@ -108,8 +110,14 @@
                 color: white;
                 width: 45%;
                 font-weight: 500;
+                transition: box-shadow 0.3s ease-in-out;
                 &:disabled{
                     background-color: rgb(200, 200, 200);
+                }
+                &:enabled{
+                    &:hover{
+                        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+                    }
                 }
             }
             .submit{
