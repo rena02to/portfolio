@@ -125,8 +125,8 @@ export default function Contact(){
                         </div>
 
                         <div className={style.buttons}>
-                            <button type="submit" className={style.submit} disabled={isSubmitting}>Enviar</button>
-                            <button type="reset" className={style.reset} disabled={isClearing} onClick={() => handleReset(resetForm)}>Limpar</button>
+                            <button type="submit" className={style.submit} disabled={!isSubmitting}>Enviar</button>
+                            <button type="reset" className={style.reset} disabled={!isClearing} onClick={() => handleReset(resetForm)}>Limpar</button>
                         </div>
                     </Form>
                 )}
