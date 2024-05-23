@@ -95,6 +95,89 @@
                     color: rgb(100, 100, 100);
                 }
             }
+            .inputradio{
+                margin-top: 10px;
+                @include align-flex(row);
+                gap: 10px;
+                .radio{
+                    @include align-flex(row);
+                    p{
+                        font-size: 17px;
+                        font-family: $main-font;
+                        margin: 0;
+                    }
+                    input{
+                        width: 20px;
+                        height: 20px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            .box{
+                @include align-flex(row);
+                gap: 10px;
+                margin-top: 15px;
+                .inputboxfile{
+                    display: flex;
+                    width: max-content;
+                    height: max-content;
+                    .inputfile{
+                        display: none;
+                    }
+                    .pseudoinput, .pseudoinputup{
+                        @include align-flex(row);
+                        gap: 5px;
+                        border-radius: 15px;
+                        border: 3px solid gray;
+                        width: max-content;
+                        color: gray;
+                        padding: 10px 20px;
+                        cursor: pointer;
+                        p{
+                            margin: 0;
+                            width: 150px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            font-size: 17px;
+                            font-family: $main-font;
+                        }
+                        svg{
+                            width: 25px;
+                            height: 25px;
+                        }
+                    }
+                    .pseudoinput{
+                        border: 3px solid gray;
+                        color: gray;
+                    }
+                    .pseudoinputup{
+                        color: black;
+                        border: 3px solid $green-color;
+                    }
+                }
+                button{
+                    @include align-flex(auto);
+                    padding: 0;
+                    background-color: transparent;
+                    svg{
+                        height: 20px;
+                        width: 20px;
+                    }
+                    &:disabled{
+                        cursor: auto;
+                        svg{
+                            color: gray;
+                        }
+                    }
+                    &:enabled{
+                        cursor: pointer;
+                        svg{
+                            color: red;
+                        }
+                    }
+                }
+            }
         }
         .buttons{
             @include align-flex(row);
