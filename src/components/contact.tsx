@@ -1,6 +1,7 @@
 import style from '@/styles/contact.module.scss'; 
 import { ErrorMessage, Field, Form, Formik } from 'formik';
 import { useState } from 'react';
+import * as Yup from 'yup';
 import { BsTrash3Fill } from 'react-icons/bs';
 import { FaFileCircleQuestion, FaUserTie } from 'react-icons/fa6';
 import { IoMail } from 'react-icons/io5';
@@ -8,6 +9,23 @@ import { RiQuestionAnswerFill } from 'react-icons/ri';
 import { TiUpload } from 'react-icons/ti';
 
 export default function Contact(){
+    const [ isSubmitting, setIsSubmitting ] = useState(false);
+    const [ isClearing, setIsClearing ] = useState(false);
+    const [ attach, setAttach ] = useState(false);
+    const [ file, setFile ] = useState<File | null>(null);
+    const [ attached, setAttached ] = useState(false);
+    const validationSchema = Yup.object().shape({
+        name: Yup.string().required('Campo obrigatório'),
+        email: Yup.string().email('E-mail inválido').required('Campo obrigatório'),
+        subject: Yup.string().required('Campo obrigatório'),
+        message: Yup.string().required('Campo obrigatório'),
+        yesorno: Yup.string().required('Campo obrigatório'),
+        // file: Yup.mixed().when('yesorno', {
+        //     is: 'yes',
+        //     then: Yup.mixed().required('Arquivo é obrigatório'),
+        //     otherwise: Yup.mixed().notRequired(),
+        // }),
+    });
     const initialValues = {
         name: '',
         email: '',
@@ -16,11 +34,6 @@ export default function Contact(){
         yesorno: 'no',
         file: '',
     };
-    const [ isSubmitting, setIsSubmitting ] = useState(false);
-    const [ isClearing, setIsClearing ] = useState(false);
-    const [ attach, setAttach ] = useState(false);
-    const [ file, setFile ] = useState<File | null>(null);
-    const [ attached, setAttached ] = useState(false);
 
     const handleUpload = (event: any) => {
         let fileinput =  event.target.files[0];
@@ -51,8 +64,8 @@ export default function Contact(){
     return(
         <section className={style.contact} id='contact'>
             <h2>Contate-me</h2>
-            <Formik initialValues={initialValues} onSubmit={handleSubmit}>
-                {({ resetForm }) => (
+            <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
+                {({ resetForm, values }) => (
                     <Form>
                         <div className={style.title}>
                             <h3>Formulário de contato</h3>
@@ -65,7 +78,7 @@ export default function Contact(){
                                 <FaUserTie/>
                                 <Field type="text" name="name" id='name' placeholder='Digite aqui seu nome e sobrenome' required/>
                             </div>
-                            <ErrorMessage name='name'/>
+                            <ErrorMessage className={style.error} name='name'/>
                         </div>
 
                         <div className={style.inputbox}>
@@ -74,7 +87,7 @@ export default function Contact(){
                                 <IoMail/>
                                 <Field type="email" name="email" id="email" placeholder='Digite aqui seu e-mail' required/>
                             </div>
-                            <ErrorMessage name='email'/>
+                            <ErrorMessage className={style.error} name='email'/>
                         </div>
 
                         <div className={style.inputbox}>
@@ -83,7 +96,7 @@ export default function Contact(){
                                 <FaFileCircleQuestion/>
                                 <Field type="text" name="subject" id='subject' placeholder='Digite aqui o assunto' required/>
                             </div>
-                            <ErrorMessage name='subject'/>
+                            <ErrorMessage className={style.error} name='subject'/>
                         </div>
 
                         <div className={style.inputbox}>
@@ -92,7 +105,7 @@ export default function Contact(){
                                 <RiQuestionAnswerFill/>
                                 <Field as="textarea" name="message" id="message" placeholder='Digite aqui a mensagem' required/>
                             </div>
-                            <ErrorMessage name='message'/>
+                            <ErrorMessage className={style.error} name='message'/>
                         </div>
 
                         <div className={style.inputbox}>
@@ -108,25 +121,28 @@ export default function Contact(){
                                 </label>
                             </div>
                             {attach ? 
-                                <div className={style.box}>
-                                    <div className={style.inputboxfile}>
-                                        <Field className={style.inputfile} type="file" name="file" id="file" accept=".pdf, .jpg, .jpeg, .txt" onChange={handleUpload} required={attach}/>
-                                        <label htmlFor='file' className={!attached ? style.pseudoinput : style.pseudoinputup}>
-                                            <p>{file === null ? "Encontrar no dispositivo" : file.name}</p>
-                                            <TiUpload/>
-                                        </label>
+                                <>
+                                    <div className={style.box}>
+                                        <div className={style.inputboxfile}>
+                                            <Field className={style.inputfile} type="file" name="file" id="file" accept=".pdf, .jpg, .jpeg, .txt" onChange={handleUpload} required={attach}/>
+                                            <label htmlFor='file' className={!attached ? style.pseudoinput : style.pseudoinputup}>
+                                                <p>{file === null ? "Encontrar no dispositivo" : file.name}</p>
+                                                <TiUpload/>
+                                            </label>
+                                        </div>
+                                        <button type="button" title="Remover arquivo" disabled={attached ? false : true} onClick={handleDeleteFile}><BsTrash3Fill/></button>
                                     </div>
-                                    <button type="button" title="Remover arquivo" disabled={attached ? false : true} onClick={handleDeleteFile}><BsTrash3Fill/></button>
-                                </div>
+                                    <ErrorMessage className={style.error} name='file'/>
+                                </>
                                 :
                                 null
                             }
-                            <ErrorMessage name='file'/>
+                            <ErrorMessage className={style.error} name='yesorno'/>
                         </div>
 
                         <div className={style.buttons}>
-                            <button type="submit" className={style.submit} disabled={!isSubmitting}>Enviar</button>
-                            <button type="reset" className={style.reset} disabled={!isClearing} onClick={() => handleReset(resetForm)}>Limpar</button>
+                            <button type="submit" className={style.submit} disabled={isSubmitting}>Enviar</button>
+                            <button type="reset" className={style.reset} disabled={isClearing} onClick={() => handleReset(resetForm)}>Limpar</button>
                         </div>
                     </Form>
                 )}
