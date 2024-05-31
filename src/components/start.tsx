@@ -60,7 +60,7 @@ export default function Start(){
                     <p>GitHub</p>
                     <HiOutlineExternalLink className={style.external}/>
                 </a>
-                <a href='https://www.canva.com/design/DAFtx-3KHsg/js_-0M_Nu7iDI5Rw_qaQkA/edit?utm_content=DAFtx-3KHsg&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' target="_blank" className={style.curriculum}>
+                <a href='https://www.canva.com/design/DAGEZQSdrtU/dXnzCxVkg9YH_sWCOwpHPQ/edit?utm_content=DAGEZQSdrtU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' target="_blank" className={style.curriculum}>
                     <HiOutlineDocumentText className={style.icon}/>
                     <p>CV</p>
                     <HiOutlineExternalLink className={style.external}/>
