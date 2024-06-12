@@ -32,4 +32,3 @@ Referência para a imagem | Link para a imagem (créditos)
  
  [![linkedin](https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/renatosalves)
 </div>
-
