@@ -10,7 +10,7 @@ Este projeto de portfólio foi concebido como uma plataforma para exibir e desta
 
 [![Imagem do projeto](public/images/portfolio.svg)](https://renatoalves.site)
 
-## Stack utilizada
+## Stack utilizada no projeto
 
 ![Next](https://skillicons.dev/icons?i=next "Next")
 ![SASS](https://skillicons.dev/icons?i=sass "SASS")
