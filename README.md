@@ -1,5 +1,4 @@
 <div align="center">
-
 <img src='public/favicon.ico' width='50' heigth='50'/>
 
 # Renato Alves | Portfolio
