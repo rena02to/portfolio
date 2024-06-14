@@ -1,4 +1,5 @@
 <div align="center">
+
 <img src='public/favicon.ico' width='50' heigth='50'/>
 
 # Renato Alves | Portfolio
@@ -30,5 +31,4 @@ Caminho/link para a imagem | Créditos pela imagem
 © 2024 Renato Alves | Desenvolvedor Front end
 
 [![linkedin](https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/renatosalves)
-
 </div>
