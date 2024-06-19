@@ -118,6 +118,7 @@
                 transition: box-shadow 0.3s ease-in-out;
                 &:disabled{
                     background-color: rgb(200, 200, 200);
+                    cursor: auto;
                 }
                 &:enabled{
                     &:hover{

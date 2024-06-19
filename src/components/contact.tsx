@@ -1,6 +1,6 @@
 import style from '@/styles/contact.module.scss'; 
 import { ErrorMessage, Field, Form, Formik } from 'formik';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import * as Yup from 'yup';
 import { BsTrash3Fill } from 'react-icons/bs';
 import { FaFileCircleQuestion, FaUserTie } from 'react-icons/fa6';
@@ -34,7 +34,7 @@ export default function Contact(){
         <section className={style.contact} id='contact'>
             <h2>Contate-me</h2>
             <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
-                {({ resetForm, values }) => (
+                {({ resetForm, isValid, dirty }) => (
                     <Form>
                         <div className={style.title}>
                             <h3>Formulário de contato</h3>
@@ -78,8 +78,8 @@ export default function Contact(){
                         </div>
 
                         <div className={style.buttons}>
-                            <button type="submit" className={style.submit} disabled={isSubmitting}>Enviar</button>
-                            <button type="reset" className={style.reset} disabled={isClearing} onClick={() => handleReset(resetForm)}>Limpar</button>
+                            <button type="submit" className={style.submit} disabled={!isValid || !dirty}>Enviar</button>
+                            <button type="reset" className={style.reset} disabled={!dirty} onClick={() => handleReset(resetForm)}>Limpar</button>
                         </div>
                     </Form>
                 )}
