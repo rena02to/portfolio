@@ -1,16 +1,18 @@
 import style from '@/styles/contact.module.scss'; 
 import { ErrorMessage, Field, Form, Formik } from 'formik';
-import { useEffect, useState } from 'react';
 import * as Yup from 'yup';
-import { BsTrash3Fill } from 'react-icons/bs';
 import { FaFileCircleQuestion, FaUserTie } from 'react-icons/fa6';
 import { IoMail } from 'react-icons/io5';
-import { RiQuestionAnswerFill } from 'react-icons/ri';
-import { TiUpload } from 'react-icons/ti';
+import { RiLoader2Line, RiQuestionAnswerFill } from 'react-icons/ri';
+import { useState } from 'react';
+import { PiBroom } from 'react-icons/pi';
+import { IoIosSend } from 'react-icons/io';
+import emailjs from 'emailjs-com';
+import { useTranslation } from 'react-i18next';
 
 export default function Contact(){
-    const [ isSubmitting, setIsSubmitting ] = useState(false);
-    const [ isClearing, setIsClearing ] = useState(false);
+    const { t } = useTranslation();
+    const [ submitting, setSubmitting ] = useState(false);
     const validationSchema = Yup.object().shape({
         name: Yup.string().required('Campo obrigatório'),
         email: Yup.string().email('E-mail inválido').required('Campo obrigatório'),
@@ -24,11 +26,30 @@ export default function Contact(){
         message: '',
     };
 
-    const handleReset = (resetForm : any) => {
-        resetForm();
+    const handleSubmit = async(values: any, {resetForm}:any ) => {
+        setSubmitting(true);
+        emailjs.send(
+            'service_ay9wy8e',
+            'template_wz4rv4k',
+            {
+                subject: values.subject,
+                from_name: values.name,
+                from_email: values.email,
+                message: values.message,
+            },
+            'eviXOsPjXHdpw_97H'
+        )
+        .then(() => {
+            alert();
+        }, (error) => {
+            alert();
+            console.log(error);
+        })
+        .finally(() => {
+            setSubmitting(false);
+            //resetForm();
+        });
     }
-
-    const handleSubmit = () => {}
 
     return(
         <section className={style.contact} id='contact'>
@@ -78,8 +99,23 @@ export default function Contact(){
                         </div>
 
                         <div className={style.buttons}>
-                            <button type="submit" className={style.submit} disabled={!isValid || !dirty}>Enviar</button>
-                            <button type="reset" className={style.reset} disabled={!dirty} onClick={() => handleReset(resetForm)}>Limpar</button>
+                            <button type="submit" className={style.submit} disabled={!isValid || !dirty || submitting}>
+                                {submitting ?
+                                    <>
+                                        <RiLoader2Line className={style.sendicon}/>
+                                        <p className={style.load}>Enviando</p>
+                                    </>
+                                    :
+                                    <>
+                                        <IoIosSend/>
+                                        <p>Enviar</p>
+                                    </>
+                                }
+                            </button>
+                            <button type="reset" className={style.reset} disabled={!dirty || submitting} onClick={() => resetForm}>
+                                <PiBroom/>
+                                <p>Limpar</p>
+                            </button>
                         </div>
                     </Form>
                 )}

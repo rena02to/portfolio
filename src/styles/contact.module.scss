@@ -116,6 +116,16 @@
                 width: 45%;
                 font-weight: 500;
                 transition: box-shadow 0.3s ease-in-out;
+                p{
+                    margin: 0;
+                    font-size: 17px;
+                    font-weight: 500;
+                    letter-spacing: 1px;
+                }
+                svg{
+                    width: 25px;
+                    height: 25px;
+                }
                 &:disabled{
                     background-color: rgb(200, 200, 200);
                     cursor: auto;
@@ -128,10 +138,52 @@
             }
             .submit{
                 background-color: $blue-color;
+                .load{
+                    &::after{
+                        content: '...';
+                        margin-left: 2px;
+                        animation: loadingname 1.5s infinite ease-in-out;
+                    }
+                }
+                .sendicon{
+                    animation: loading 3s infinite linear;
+                }
             }
             .reset{
                 background-color: rgb(255, 50, 50);
             }
         }
+        .sendError{
+            color: red;
+            font-size: 17px;
+            margin: 10px 0 0 0;
+        }
+    }
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    0%{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loadingname{
+    0%{
+        content: '\00a0\00a0\00a0';
+    }
+    25%{
+        content: '.\00a0\00a0';
+    }
+    50%{
+        content: '..\00a0';
+    }
+    75%{
+        content: '...';
+    }
+    100%{
+        content: '\00a0\00a0\00a0';
     }
 }
