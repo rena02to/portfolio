@@ -6,6 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { ContextProvider } from "@/context/context";
 import '@/lib/i18n';
+import { ToastContainer } from "react-toastify";
 
 export default function App({ Component, pageProps }: AppProps) {
   return(
@@ -19,6 +20,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Analytics/>
       <GoogleAnalytics gaId="G-QNMWKLRCB4"/>
       <ContextProvider>
+        <ToastContainer position="bottom-right" closeOnClick/>
         <Component {...pageProps}/>
       </ContextProvider>
     </>

@@ -9,6 +9,8 @@ import { PiBroom } from 'react-icons/pi';
 import { IoIosSend } from 'react-icons/io';
 import emailjs from 'emailjs-com';
 import { useTranslation } from 'react-i18next';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export default function Contact(){
     const { t } = useTranslation();
@@ -29,7 +31,7 @@ export default function Contact(){
     const handleSubmit = async(values: any, {resetForm}:any ) => {
         setSubmitting(true);
         emailjs.send(
-            'service_ay9wy8e',
+            'service_ay9wy8',
             'template_wz4rv4k',
             {
                 subject: values.subject,
@@ -40,12 +42,14 @@ export default function Contact(){
             'eviXOsPjXHdpw_97H'
         )
         .then(() => {
+            toast.success(t('contact.success'));
+            resetForm();
         }, (error) => {
+            toast.error(t('contact.error'));
             console.log(error);
         })
         .finally(() => {
             setSubmitting(false);
-            //resetForm();
         });
     }
 
