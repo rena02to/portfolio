@@ -88,6 +88,31 @@
             "responseessentials": "Os cookies essenciais são fundamentais para o funcionamento do nosso site. Eles são utilizados apenas para lembrar se você aceitou ou negou o uso dos cookies opcionais. Esses cookies não coletam informações pessoais e não podem ser desativados.",
             "optionals": "Cookies opcionais",
             "responseoptionals": "Os cookies opcionais nos ajudam a melhorar sua experiência no site ao lembrar suas preferências, como o idioma escolhido. Eles não são essenciais, mas permitem personalizar o conteúdo para atender às suas preferências. Você pode escolher permitir ou recusar esses cookies."
+        },
+        "contact": {
+            "contact": "Contate-me",
+            "success": "Mensagem enviada com sucesso, em breve entrarei em contato!",
+            "error": "Ocorreu um erro ao enviar a mensagem. Consulte o console do navegador para ver mais informações sobre o erro.",
+            "title": "Formulário de contato",
+            "mandatory": " Indica um campo de preenchimento obrigatório",
+            "inputs": {
+                "name": "Nome e sobrenome",
+                "subject": "Assunto",
+                "message": "Mensagem"
+            },
+            "placeholders": {
+                "name": "Digite aqui seu nome e sobrenome",
+                "email": "Digite aqui seu e-mail",
+                "subject": "Digite aqui o assunto",
+                "message": "Digite aqui a mensagem"
+            },
+            "errors": {
+                "mandatory": "Campo obrigatório",
+                "email": "E-mail inválido"
+            },
+            "send": "Enviar",
+            "sending": "Enviando",
+            "clear": "Limpar"
         }
     }
 }

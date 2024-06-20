@@ -14,10 +14,10 @@ export default function Contact(){
     const { t } = useTranslation();
     const [ submitting, setSubmitting ] = useState(false);
     const validationSchema = Yup.object().shape({
-        name: Yup.string().required('Campo obrigatório'),
-        email: Yup.string().email('E-mail inválido').required('Campo obrigatório'),
-        subject: Yup.string().required('Campo obrigatório'),
-        message: Yup.string().required('Campo obrigatório'),
+        name: Yup.string().required(t('contact.errors.mandatory')),
+        email: Yup.string().email(t('contact.errors.email')).required(t('contact.errors.mandatory')),
+        subject: Yup.string().required(t('contact.errors.mandatory')),
+        message: Yup.string().required(t('contact.errors.mandatory')),
     });
     const initialValues = {
         name: '',
@@ -40,9 +40,7 @@ export default function Contact(){
             'eviXOsPjXHdpw_97H'
         )
         .then(() => {
-            alert();
         }, (error) => {
-            alert();
             console.log(error);
         })
         .finally(() => {
@@ -53,20 +51,20 @@ export default function Contact(){
 
     return(
         <section className={style.contact} id='contact'>
-            <h2>Contate-me</h2>
+            <h2>{t('contact.contact')}</h2>
             <Formik initialValues={initialValues} validationSchema={validationSchema} onSubmit={handleSubmit}>
                 {({ resetForm, isValid, dirty }) => (
                     <Form>
                         <div className={style.title}>
-                            <h3>Formulário de contato</h3>
-                            <p><span>*</span> Indica um campo de preenchimento obrigatório</p>
+                            <h3>{t('contact.title')}</h3>
+                            <p><span>*</span>{t('contact.mandatory')}</p>
                         </div>
 
                         <div className={style.inputbox}>
-                            <label htmlFor="name">Nome e sobrenome <span>*</span></label>
+                            <label htmlFor="name">{t('contact.inputs.name')}<span>*</span></label>
                             <div className={style.input}>
                                 <FaUserTie/>
-                                <Field type="text" name="name" id='name' placeholder='Digite aqui seu nome e sobrenome' required/>
+                                <Field type="text" name="name" id='name' placeholder={t('contact.placeholders.name')} required/>
                             </div>
                             <ErrorMessage className={style.error} name='name' component="p"/>
                         </div>
@@ -75,25 +73,25 @@ export default function Contact(){
                             <label htmlFor="email">E-mail<span>*</span></label>
                             <div className={style.input}>
                                 <IoMail/>
-                                <Field type="email" name="email" id="email" placeholder='Digite aqui seu e-mail' required/>
+                                <Field type="email" name="email" id="email" placeholder={t('contact.placeholders.email')} required/>
                             </div>
                             <ErrorMessage className={style.error} name='email' component="p"/>
                         </div>
 
                         <div className={style.inputbox}>
-                            <label htmlFor="subject">Assunto<span>*</span></label>
+                            <label htmlFor="subject">{t('contact.inputs.subject')}<span>*</span></label>
                             <div className={style.input}>
                                 <FaFileCircleQuestion/>
-                                <Field type="text" name="subject" id='subject' placeholder='Digite aqui o assunto' required/>
+                                <Field type="text" name="subject" id='subject' placeholder={t('contact.placeholders.subject')} required/>
                             </div>
                             <ErrorMessage className={style.error} name='subject' component="p"/>
                         </div>
 
                         <div className={style.inputbox}>
-                            <label htmlFor="message">Mensagem<span>*</span></label>
+                            <label htmlFor="message">{t('contact.inputs.message')}<span>*</span></label>
                             <div className={style.input}>
                                 <RiQuestionAnswerFill/>
-                                <Field as="textarea" name="message" id="message" placeholder='Digite aqui a mensagem' required/>
+                                <Field as="textarea" name="message" id="message" placeholder={t('contact.placeholders.message')} required/>
                             </div>
                             <ErrorMessage className={style.error} name='message' component="p"/>
                         </div>
@@ -103,18 +101,18 @@ export default function Contact(){
                                 {submitting ?
                                     <>
                                         <RiLoader2Line className={style.sendicon}/>
-                                        <p className={style.load}>Enviando</p>
+                                        <p className={style.load}>{t('contact.sending')}</p>
                                     </>
                                     :
                                     <>
                                         <IoIosSend/>
-                                        <p>Enviar</p>
+                                        <p>{t('contact.send')}</p>
                                     </>
                                 }
                             </button>
                             <button type="reset" className={style.reset} disabled={!dirty || submitting} onClick={() => resetForm}>
                                 <PiBroom/>
-                                <p>Limpar</p>
+                                <p>{t('contact.clear')}</p>
                             </button>
                         </div>
                     </Form>
