@@ -1,0 +1,35 @@
+@import './main.scss';
+
+.footer{
+    padding: 15px 0 15px 70px;
+    @include align-flex(column);
+    width: calc(100% - 70px);
+    border-top: black 1px solid;
+    @media (max-width: 700px){
+        padding: 15px 0 70px 0;
+        width: 100%;
+    }
+    .links{
+        @include align-flex(row);
+        gap: 10px;
+        a{
+            text-decoration: none;
+            color: black;
+            svg{
+                width: 25px;
+                height: 25px;
+            }
+        }
+        .linkedin{
+            svg{
+                color: $blue-color;
+            }
+        }
+    }
+    p{
+        margin: 0;
+        font-size: 15px;
+        font-family: $main-font;
+        font-weight: 400;
+    }
+}
