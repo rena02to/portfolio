@@ -31,7 +31,7 @@ export default function Contact(){
     const handleSubmit = async(values: any, {resetForm}:any ) => {
         setSubmitting(true);
         emailjs.send(
-            'service_ay9wy8',
+            'service_ay9wy8e',
             'template_wz4rv4k',
             {
                 subject: values.subject,
