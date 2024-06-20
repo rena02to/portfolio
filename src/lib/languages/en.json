@@ -90,29 +90,29 @@
             "responseoptionals": "Optional cookies help us improve your website experience by remembering your preferences, such as your chosen language. They are not essential, but they allow us to personalize content to suit your preferences. You can choose to allow or refuse these cookies."
         },
         "contact": {
-            "contact": "",
-            "success": "",
-            "error": "",
-            "title": "",
-            "mandatory": "",
+            "contact": "Contact me",
+            "success": "Message sent successfully, I'll be in touch soon!",
+            "error": "An error occurred while sending the message. Check your browser console for more information about the error.",
+            "title": "Contact form",
+            "mandatory": " Indicates a mandatory field",
             "inputs": {
-                "name": "",
-                "subject": "",
-                "message": ""
+                "name": "First name and surname",
+                "subject": "Subject",
+                "message": "Message"
             },
             "placeholders": {
-                "name": "",
-                "email": "",
-                "subject": "",
-                "message": ""
+                "name": "Enter your first and surname here",
+                "email": "Enter your email here",
+                "subject": "Enter subject here",
+                "message": "Enter message here"
             },
             "errors": {
-                "mandatory": "",
-                "email": ""
+                "mandatory": "Mandatory field",
+                "email": "Invalid e-mail"
             },
-            "send": "",
-            "sending": "",
-            "clear": ""
+            "send": "Send",
+            "sending": "Sending",
+            "clear": "Clear"
         }
     }
 }
