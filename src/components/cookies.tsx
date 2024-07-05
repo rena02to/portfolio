@@ -1,3 +1,4 @@
+import Context, { useContexts } from '@/context/context';
 import style from '@/styles/cookies.module.scss';
 import cookies from 'js-cookie';
 import Link from 'next/link';
@@ -9,6 +10,7 @@ import { LiaCookieBiteSolid } from 'react-icons/lia';
 export default function Cookies(){
     const { t } = useTranslation();
     const [cookiesOculted, setCookiesOculted] = useState(false);
+    const { language } = useContexts();
 
     useEffect(() => {
         setCookiesOculted(cookies.get('cookiesAccepted') === 'true' || cookies.get('cookiesAccepted') === 'false');
@@ -22,6 +24,7 @@ export default function Cookies(){
             setCookiesOculted(true);
         }else{
             cookies.set('cookiesAccepted', 'true', { expires: undefined });
+            cookies.set('language', language, { expires: undefined });
             setCookiesOculted(true);
         }
     }

@@ -5,18 +5,18 @@ interface ContextProviderProps {
 }
 
 interface ContextType {
-    darkmode: boolean;
-    setDarkmode: React.Dispatch<React.SetStateAction<boolean>>;
+    language: string;
+    setLanguage: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const Context = createContext<ContextType | undefined>(undefined);
 
 export const ContextProvider = ({ children }: ContextProviderProps) => {
-    const [darkmode, setDarkmode] = useState(false);
+    const [language, setLanguage] = useState('pt');
 
     // Retornar o provedor de contexto com os estados como valor
     return (
-        <Context.Provider value={{ darkmode, setDarkmode }}>
+        <Context.Provider value={{ language, setLanguage }}>
             {children}
         </Context.Provider>
     );
@@ -30,3 +30,5 @@ export const useContexts = (): ContextType => {
     }
     return context;
 };
+
+export default Context;

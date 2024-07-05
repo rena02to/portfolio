@@ -7,6 +7,7 @@ import Select from 'react-select';
 import { useEffect, useState } from 'react';
 import cookies from 'js-cookie';
 import Image from 'next/image';
+import { useContexts } from '@/context/context';
 
 export default function Start(){
     const { t, i18n } = useTranslation();
@@ -15,7 +16,7 @@ export default function Start(){
         { value: 'en', label: <div className={style.option}><Image src='/images/us.png' width={20} height={20} alt='United States image'/> {t('start.en')}</div>},
         { value: 'es', label: <div className={style.option}><Image src='/images/es.png' width={20} height={20} alt='Spanish image'/> {t('start.es')}</div> }
     ];
-    const [language, setLanguage] = useState('pt');
+    const {language, setLanguage} = useContexts();
 
     useEffect(() => {
         if(cookies.get('cookiesAccepted') === 'true'){
