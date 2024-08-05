@@ -6,7 +6,7 @@
 
 Este projeto de portfólio foi concebido como uma plataforma para exibir e destacar minhas habilidades e experiências, além de mostrar meus projetos. Com uma abordagem minimalista e foco na usabilidade, o design é clean e intuitivo, permitindo que os visitantes naveguem facilmente pelas seções e obtenham informações relevantes de forma clara e organizada.
 
-[![Portfolio](https://img.shields.io/badge/Para_visitar_o_projeto-clique_aqui-323232?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](https://linkedin.com/in/renatosalves)
+[![Portfolio](https://img.shields.io/badge/Para_visitar_o_projeto-clique_aqui-323232?style=for-the-badge&logo=buy-me-a-coffee&logoColor=white)](https://renatoalves.site)
 
 [![Imagem do projeto](public/images/portfolio.svg)](https://renatoalves.site)
 
