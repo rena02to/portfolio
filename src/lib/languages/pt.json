@@ -77,6 +77,10 @@
             "1": {
                 "desc": "Este projeto de portfólio foi concebido como uma plataforma para exibir e destacar minhas habilidades e experiências, além de mostrar meus projetos. Com uma abordagem minimalista e foco na usabilidade, o design é clean e intuitivo, permitindo que os visitantes naveguem facilmente pelas seções e obtenham informações relevantes de forma clara e organizada.",
                 "status": "Finalizado"
+            },
+            "2": {
+                "desc": "O projeto TecnoBurguer é um sistema de gerenciamento centralizado desenvolvido para otimizar as operações de um restaurante, oferecendo soluções eficazes tanto para funcionários quanto para clientes. Desde a concepção das ideias e definição das regras de negócio até a criação das telas e implementação final, este sistema foi projetado para fornecer uma experiência integrada e intuitiva.",
+                "status": "Em desenvolvimento"
             }
         },
         "policy": {

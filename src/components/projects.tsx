@@ -34,6 +34,38 @@ export default function Projects(){
             image: <Image src='/images/portfolio.svg' className={style.image} alt="Project image" width={350} height={250}/>,
             status: <p className={style.finish}>{t('projects.1.status')}</p>,
             favorite: true
+        },
+        {
+            key: 2,
+            name: <h3>TecnoBurguer</h3>,
+            desc: <p className={style.desc}>{t('projects.2.desc')}</p>,
+            stack: [
+                {
+                    key: 1,
+                    name: 'Next.js'
+                },
+                {
+                    key: 2,
+                    name: 'Sass'
+                },
+                {
+                    key: 3,
+                    name: 'Django'
+                },
+                {
+                    key: 4,
+                    name: 'TypeScript'
+                },
+                {
+                    key: 5,
+                    name: 'HTML'
+                }
+            ],
+            github: 'https://github.com/rena02to/TecnoBurguer',
+            link: 'https://tecnoburguer.renatoalves.site',
+            image: <Image src='/images/TecnoBurguer_Arte.png' className={style.image} alt="Project image" width={350} height={250}/>,
+            status: <p className={style.development}>{t('projects.2.status')}</p>,
+            favorite: true
         }
     ]
 
