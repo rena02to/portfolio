@@ -14,7 +14,7 @@
             "denied": "Negar"
         },
         "navbar": {
-            "dev": "Desenvolvedor front end",
+            "dev": "Desenvolvedor full stack",
             "home": "Início",
             "menu": {
                 "title": "Menu",
@@ -28,7 +28,7 @@
         "start": {
             "dev": {
                 "1": "DESENVOLVEDOR",
-                "2": "FRONT END"
+                "2": "FULL STACK"
             },
             "seo": "SEO",
             "responsive": "Responsividade",
@@ -42,19 +42,18 @@
         "summary": {
             "about": {
                 "title": "Um pouco sobre mim",
-                "text1": "Sou um desenvolvedor front-end apaixonado por tecnologia, design e tudo o que está relacionado ao universo digital. Atualmente, sou bacharelando em Ciência da Computação, e encontro-me aprimorando minhas habilidades em desenvolvimento front-end, estudando mais aprofundadamente os conceitos do design responsivo, UI, UX e SEO.",
-                "text2": "Além de minha paixão por tecnologia, sou um exímio amante do universo geek e gamer (e sim, Resident evil é o melhor game, e batman é o herói mais forte). Sempre que tenho a chance, acabo mergulhando em mundos virtuais e ficando imerso em novas aventuras.",
-                "text3": "Sou também um entusiasta de cibersegurança e estou buscando constantemente adquirir e aprimorar meus conhecimentos na área.",
-                "text4": "Combinando minha paixão por tecnologia e meu amor por games e cultura geek, busco criar experiências digitais envolventes e intuitivas que cativem os usuários e os transportem para novos mundos. Estou constantemente buscando aprender e crescer, explorando novas tecnologias e tendências para oferecer soluções inovadoras e criativas."
+                "text1": "Atualmente, sou desenvolvedor full stack, com foco no desenvolvimento front end. Ao desenvolver minhas aplicações meu foco é transformar ideias em interfaces funcionais, atraentes e responsivas.",
+                "text2": "Minha stack de desenvolvimento front end é baseada em Next.js, Sass e TypeScript. Com essa stack construo aplicações modernas e eficientes. Estou sempre visando entender o comportamento do usuário para proporcionar a melhor experiência ao acessar minhas aplicações.",
+                "text3": "No back end, utilizo o Django para criar soluções robustas e escaláveis, garantindo que o sistema funcione da melhor forma possível em conjunto com o front end."
             },
-            "dev": "Desenvolvedor front end",
+            "dev": "Desenvolvedor full stack",
             "skills": {
                 "title": "Habilidades",
                 "responsive": "Design responsivo",
                 "desc": {
                     "front": {
-                        "title": "Desenvolvimento front end",
-                        "desc": "Com habilidades especializadas em desenvolvimento front end, estou familiarizado com tecnologias como Next.js, SASS e JavaScript, que formam a base sólida para criar experiências digitais envolventes e responsivas. Além de dominar essas ferramentas, tenho uma mentalidade voltada para a inovação, buscando constantemente maneiras criativas de melhorar o design e a funcionalidade das aplicações, garantindo que cada projeto ultrapasse as expectativas e ofereça uma experiência excepcional aos usuários."
+                        "title": "Desenvolvimento full stack",
+                        "desc": "Com habilidades especializadas em desenvolvimento full stack, estou familiarizado com tecnologias como Next.js, SASS, Django e JavaScript, que formam a base sólida para criar experiências digitais envolventes e responsivas. Além de dominar essas ferramentas, tenho uma mentalidade voltada para a inovação, buscando constantemente maneiras criativas de melhorar o design e a funcionalidade das aplicações, garantindo que cada projeto ultrapasse as expectativas e ofereça uma experiência excepcional aos usuários."
                     },
                     "seo": {
                         "title": "Otimização para motores de busca (SEO)",
@@ -81,6 +80,10 @@
             "2": {
                 "desc": "O projeto TecnoBurguer é um sistema de gerenciamento centralizado desenvolvido para otimizar as operações de um restaurante, oferecendo soluções eficazes tanto para funcionários quanto para clientes. Desde a concepção das ideias e definição das regras de negócio até a criação das telas e implementação final, este sistema foi projetado para fornecer uma experiência integrada e intuitiva.",
                 "status": "Em desenvolvimento"
+            },
+            "3": {
+                "desc": "O projeto consiste em uma API Restful que tem como objetivo realizar a criação de eventos, de forma integrada ao Google Calendar. Isto é, os eventos criados na aplicação, serão refletidos no Google agenda do usuário.",
+                "status": "Finalizado"
             }
         },
         "policy": {

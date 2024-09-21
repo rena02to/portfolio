@@ -27,7 +27,7 @@
         },
         "start": {
             "dev": {
-                "1": "FRONT END",
+                "1": "FULL STACK",
                 "2": "DEVELOPER"
             },
             "seo": "SEO",
@@ -42,19 +42,18 @@
         "summary": {
             "about": {
                 "title": "A little about myself",
-                "text1": "I'm a front-end developer passionate about technology, design, and everything related to the digital universe. Currently, I'm pursuing a bachelor's degree in Computer Science, and I'm honing my skills in front-end development, delving deeper into the concepts of responsive design, UI, UX, and SEO.",
-                "text2": "In addition to my passion for technology, I'm an excellent lover of the geek and gamer universe (and yes, Resident Evil is the best game, and Batman is the strongest hero). Whenever I have the chance, I end up diving into virtual worlds and becoming immersed in new adventures.",
-                "text3": "I'm also a cybersecurity enthusiast and am constantly seeking to acquire and improve my knowledge in the area.",
-                "text4": "Combining my passion for technology and my love of games and geek culture, I seek to create engaging and intuitive digital experiences that captivate users and transport them to new worlds. I'm constantly seeking to learn and grow, exploring new technologies and trends to offer innovative and creative solutions."
+                "text1": "Currently, I am a full stack developer, focusing on front end development. When developing my applications my focus is to transform ideas into functional, attractive and responsive interfaces.",
+                "text2": "My front end development stack is based on Next.js, Sass and TypeScript. With this stack I build modern and efficient applications. I am always aiming to understand user behavior to provide the best experience when accessing my applications.",
+                "text3": "On the back end, I use Django to create robust and scalable solutions, ensuring that the system works in the best way possible in conjunction with the front end."
             },
-            "dev": "Front end developer",
+            "dev": "Full stack developer",
             "skills": {
                 "title": "Skills",
                 "responsive": "Responsive design",
                 "desc": {
                     "front": {
-                        "title": "Front end development",
-                        "desc": "With specialized skills in front end development, I'm familiar with technologies such as Next.js, SASS and JavaScript, which form the solid foundation for creating engaging and responsive digital experiences. In addition to mastering these tools, I have an innovation-oriented mindset, constantly seeking creative ways to improve the design and functionality of applications, ensuring that each project exceeds expectations and offers an exceptional experience to users."
+                        "title": "Full stack development",
+                        "desc": "With specialized skills in full stack development, I'm familiar with technologies such as Next.js, SASS, Django and JavaScript, which form the solid foundation for creating engaging and responsive digital experiences. In addition to mastering these tools, I have an innovation-oriented mindset, constantly seeking creative ways to improve the design and functionality of applications, ensuring that each project exceeds expectations and offers an exceptional experience to users."
                     },
                     "seo": {
                         "title": "Search Engine Optimization (SEO)",
@@ -81,6 +80,10 @@
             "2": {
                 "desc": "The TecnoBurguer project is a centralized management system developed to optimize a restaurant's operations, offering effective solutions for both employees and customers. From the conception of ideas and definition of business rules to the creation of screens and final implementation, this system was designed to provide an integrated and intuitive experience.",
                 "status": "In development"
+            },
+            "3": {
+                "desc": "The project consists of a Restful API that aims to create events, integrated with Google Calendar. That is, events created in the application will be reflected in the user's Google calendar.",
+                "status": "Finished"
             }
         },
         "policy": {

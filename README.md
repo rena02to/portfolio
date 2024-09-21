@@ -28,7 +28,7 @@ Caminho/link para a imagem | Créditos pela imagem
 [Imgem da Espanha](/public/images/es.png) da seção de `linguagens` | Imagem de Dighital em [Freepik](https://www.freepik.com/icon/flags_3909352#fromView=family&page=1&position=0&uuid=840ea745-680d-40e4-8d39-930e348c65e9)
 
 ##
-© 2024 Renato Alves | Desenvolvedor Front end
+© 2024 Renato Alves | Desenvolvedor Full Stack
 
 [![linkedin](https://img.shields.io/badge/Linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/renatosalves)
 

@@ -6,7 +6,7 @@ import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5 } from 'react-icons/fa6';
 import { MdTouchApp } from 'react-icons/md';
 import { PiUserFocus } from 'react-icons/pi';
 import { RiJavascriptFill } from 'react-icons/ri';
-import { SiNextdotjs, SiSass, SiSearxng } from 'react-icons/si';
+import { SiDjango, SiNextdotjs, SiSass, SiSearxng } from 'react-icons/si';
 
 export default function Summary(){
     const { t } = useTranslation();
@@ -14,14 +14,15 @@ export default function Summary(){
         { key: 1, value: "HTML", icon: <FaHtml5/> },
         { key: 2, value: "CSS", icon: <FaCss3Alt/> },
         { key: 3, value: "Next.js", icon: <SiNextdotjs/> },
-        { key: 4, value: "JavaScript", icon: <RiJavascriptFill/> },
-        { key: 5, value: "Sass", icon: <SiSass/> },
-        { key: 6, value: "SEO", icon: <SiSearxng/> },
-        { key: 7, value: "UI", icon: <MdTouchApp/> },
-        { key: 8, value: "UX", icon: <PiUserFocus/> },
-        { key: 9, value: t('summary.skills.responsive'), icon: <BiSolidMobileVibration/> },
-        { key: 10, value: "Git", icon: <FaGitAlt/> },
-        { key: 11, value: "GitHub", icon: <FaGithub/> }
+        { key: 4, value: "Django", icon: <SiDjango/> },
+        { key: 5, value: "JavaScript", icon: <RiJavascriptFill/> },
+        { key: 6, value: "Sass", icon: <SiSass/> },
+        { key: 7, value: "SEO", icon: <SiSearxng/> },
+        { key: 8, value: "UI", icon: <MdTouchApp/> },
+        { key: 9, value: "UX", icon: <PiUserFocus/> },
+        { key: 10, value: t('summary.skills.responsive'), icon: <BiSolidMobileVibration/> },
+        { key: 11, value: "Git", icon: <FaGitAlt/> },
+        { key: 12, value: "GitHub", icon: <FaGithub/> }
     ];
     const desc = [
         { key: 1, title: t('summary.skills.desc.front.title'), value: t('summary.skills.desc.front.desc') },
@@ -45,7 +46,6 @@ export default function Summary(){
                             <p>{t('summary.about.text1')}</p>
                             <p>{t('summary.about.text2')}</p>
                             <p>{t('summary.about.text3')}</p>
-                            <p>{t('summary.about.text4')}</p>
                         </div>
                     </div>
                     <div className={style.skills}>

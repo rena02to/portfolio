@@ -66,6 +66,22 @@ export default function Projects(){
             image: <Image src='/images/TecnoBurguer_Arte.png' className={style.image} alt="Project image" width={350} height={250}/>,
             status: <p className={style.development}>{t('projects.2.status')}</p>,
             favorite: true
+        },
+        {
+            key: 3,
+            name: <h3>RSA Google Calendar (API)</h3>,
+            desc: <p className={style.desc}>{t('projects.3.desc')}</p>,
+            stack: [
+                {
+                    key: 1,
+                    name: 'Django'
+                },
+            ],
+            github: 'https://github.com/rena02to/tasks-google-calendar',
+            link: 'https://github.com/rena02to/tasks-google-calendar',
+            image: <Image src='/images/RSA_GC_Arte.png' className={style.image} alt="Project image" width={350} height={250}/>,
+            status: <p className={style.finish}>{t('projects.3.status')}</p>,
+            favorite: false
         }
     ]
 
